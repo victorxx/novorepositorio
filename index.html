@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Links Numerados | Espírito Santo</title>
+  <meta name="description" content="Lista de páginas numeradas do site Espírito Santo, com links de 1 ao infinito.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://espiritosantoes-com-brprincipal.pages.dev/">
+  <style>
+    /* Reset básico */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #f4f4f4;
+      color: #333;
+      padding: 20px;
+    }
+
+    header {
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2em;
+      color: #1a237e;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 0 auto;
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    ul {
+      list-style: none;
+      columns: 3;
+      column-gap: 30px;
+      padding: 0;
+    }
+
+    li {
+      margin: 8px 0;
+    }
+
+    a {
+      text-decoration: none;
+      color: #1565c0;
+      transition: color 0.2s ease;
+    }
+
+    a:hover {
+      color: #0d47a1;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 0.9em;
+      color: #666;
+    }
+
+    @media (max-width: 600px) {
+      ul {
+        columns: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Links Numerados do Espírito Santo</h1>
+    <p>Lista de páginas disponíveis com numeração sequencial</p>
+  </header>
+
+  <main>
+    <ul id="link-list">
+      <!-- Links serão inseridos aqui via JavaScript -->
+    </ul>
+  </main>
+
+  <footer>
+    &copy;  Espírito Santo. Todos os direitos reservados.
+  </footer>
+
+  <script>
+    const totalLinks = 5000000; // Você pode mudar esse valor para mais
+    const baseURL = "https://novorepositorio.pages.dev/";
+    const ul = document.getElementById("link-list");
+
+    for (let i = 1; i <= totalLinks; i++) {
+      const li = document.createElement("li");
+      const a = document.createElement("a");
+      a.href = baseURL + i;
+      a.textContent = "Página " + i;
+      a.title = "Visitar página " + i;
+      a.target = "_blank";
+      li.appendChild(a);
+      ul.appendChild(li);
+    }
+  </script>
+</body>
+</html>
