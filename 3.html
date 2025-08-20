@@ -1,0 +1,820 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<!-- Metadados básicos -->
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>Ciência Descomplicada: Medicina, Química e Conhecimento para Todos</title>
+<meta name="description" content="Informação acessível sobre avanços da ciência médica e química. Especialistas explicam de forma clara as inovações e descobertas que impactam a sua vida." />
+<meta name="keywords" content="ciência médica, química, avanços médicos, avanços da química, saúde, especialistas, divulgação científica, medicina, ciência para leigos, canal de ciência, saúde pública, inovação médica, inovações químicas, descobertas científicas" />
+<meta name="robots" content="index, follow" />
+<meta name="author" content="Canal Ciência Descomplicada" />
+
+<!-- Open Graph (para redes sociais como Facebook) -->
+<meta property="og:title" content="Ciência Descomplicada: Informação que transforma" />
+<meta property="og:description" content="Especialistas explicam os avanços da medicina e da química de forma simples e acessível. Conecte-se com a ciência que transforma vidas." />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="pt_BR" />
+<meta property="og:site_name" content="Ciência Descomplicada" />
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Gnome-applications-science.svg/110px-Gnome-applications-science.svg.png" />
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Ciência Descomplicada: Medicina e Química ao seu alcance" />
+<meta name="twitter:description" content="Desmistificando a ciência médica e química com especialistas. Informação clara, confiável e transformadora." />
+<meta name="twitter:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Gnome-applications-science.svg/110px-Gnome-applications-science.svg.png" />
+
+  <style>
+    /* Reset básico */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Gnome-applications-science.svg/110px-Gnome-applications-science.svg.png");      /* Faz a imagem cobrir todo o elemento */
+      background-position: center; 
+      background-repeat:no-repeat;  
+      background-size: 300px 300px;     /* Centraliza a imagem */
+      color: black;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      min-height: 100vh;
+    }
+
+    header, footer {
+      width: 100%;
+      max-width: 1100px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 4rem;
+      margin-bottom: 30px;
+      color: black;
+    }
+
+    main {
+      width: 100%;
+      max-width: 1100px;
+    }
+
+    #video {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      margin-bottom: 30px;
+    }
+
+    iframe {
+      width: 100%;
+      height: 200px;
+      border: none;
+      border-radius: 8px;
+      background: #000;
+    }
+
+    button#btn {
+      background-color: red;
+      border: none;
+      color: white;
+      padding: 12px 25px;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    button#fezes{
+         background-color: #1e88e5;
+      border: none;
+      color: white;
+      padding: 12px 25px;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button#btn:disabled {
+      background-color: #666;
+      cursor: not-allowed;
+    }
+
+    button#btn:hover:not(:disabled) {
+      background-color: #1565c0;
+    }
+
+    footer {
+      font-size: 14px;
+      color: #aaa;
+      margin-top: auto;
+      padding-top: 40px;
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      iframe {
+        height: 180px;
+      }
+
+      button#btn {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Ciência Descomplicada: Medicina, Química e Conhecimento para Todos</h1>
+  </header>
+
+  <main>
+    <section id="video" aria-label="Galeria de vídeos do Rica Games">
+      <!-- Os vídeos serão carregados via JavaScript -->
+    </section>
+
+    <button id="btn" aria-label="Carregar mais vídeos">Carregar mais vídeos</button>
+    <br>
+    <br>
+    <br>
+   <button id="fezes" style="background-color: red; border: none; padding: 10px 20px; border-radius: 5px;">
+    <a id="credito" href="https://share.google/KWgHRCKwLAg6RZDzh" style="color: white; font-size: 18px; text-decoration: none;" >ESTÁ PRECISANDO DE CRÉDITO? SAIBA COMO +</a>
+  </button>
+  <br>
+  <br>
+  <br>
+   <button id="fezes" style="background-color: red; border: none; padding: 10px 20px; border-radius: 5px;">
+    <a id="larissa" href="https://share.google/GmZYgONVHIvptSwvv" style="color: white; font-size: 18px; text-decoration: none;">Dra Larissa Saib - Medicina Capilar & Estética</a>
+  </button>
+  <br>
+  <br>
+  <br>
+  <br>
+  <button id="fezes" style="background-color: red; border: none; padding: 10px 20px; border-radius: 5px;">
+    <a id="oportunidade" href="https://share.google/GmZYgONVHIvptSwvv" style="color: white; font-size: 18px; text-decoration: none;">FAZER RENDA EXTRA ? SAIBA COMO</a>
+  </button>
+  <br>
+  <br>
+  <br>
+  <br>
+  <button id="fezes" style="background-color: red; border: none; padding: 10px 20px; border-radius: 5px;">
+    <a id="oportunidade2" href="https://share.google/GmZYgONVHIvptSwvv" style="color: white; font-size: 18px; text-decoration: none;">🚨 OFERTA IMPERDÍVEL! 🚨
+    Não perca essa chance única de aproveitar o melhor com descontos incríveis!
+    🎯 É agora ou nunca! Garanta já o seu antes que acabe!</a>
+      </button>
+  <br>
+  <br>
+  <br>
+  <br>
+  <button id="fezes" style="background-color: yellow; border: none; padding: 10px 20px; border-radius: 5px;">
+    <a id="oportunidade3" href="https://espiritosantoes-com-brprincipal.pages.dev/vps01" style="color: black; font-size: 18px; text-decoration: none;">
+      🎯 Servidores VPS potentes e com suporte brasileiro. Ideal para quem busca estabilidade e preço justo com suporte técnico ágil. 🎯
+      🎯 É agora ou nunca!🎯</a>
+      </button>
+  <br>
+  <br>
+  <br>
+  <br>
+
+   
+  </main>
+
+  <footer>
+    &copy;Ciência Descomplicada: Medicina, Química e Conhecimento para Todos
+    <a href="https://espiritosantoes-com-brprincipal.pages.dev/sitemap">MAPA</a>
+  </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    let indexe = 0;
+const limiteporvez = 1;
+const resultado = document.getElementById('video');
+const botao = document.getElementById('btn');
+let contador = 0;
+const videos = [
+"https://www.youtube.com/embed/-129niijcWQ",
+"https://www.youtube.com/embed/-3ZJYf9CZZE",
+"https://www.youtube.com/embed/-7yCSPSybRE",
+"https://www.youtube.com/embed/-8tap5PCIns",
+"https://www.youtube.com/embed/-sxNTqnumQk",
+"https://www.youtube.com/embed/12RHgc6U6_Q",
+"https://www.youtube.com/embed/1qIeJkDwGq0",
+"https://www.youtube.com/embed/2Ck3fKP5J3Q",
+"https://www.youtube.com/embed/2N2cMby7xPE",
+"https://www.youtube.com/embed/2zomdTtR_XM",
+"https://www.youtube.com/embed/33uD9xMdeLc",
+"https://www.youtube.com/embed/3tfsWlnp258",
+"https://www.youtube.com/embed/4mFWUjC2rgA",
+"https://www.youtube.com/embed/4pG9dkuuDNI",
+"https://www.youtube.com/embed/6G3fryEQ3yo",
+"https://www.youtube.com/embed/6HsNPSMcVro",
+"https://www.youtube.com/embed/6WuXCsNiYTk",
+"https://www.youtube.com/embed/6X8End75uGo",
+"https://www.youtube.com/embed/7cYTAOiwqQc",
+"https://www.youtube.com/embed/8S8npgbC0Mc",
+"https://www.youtube.com/embed/8lgr4HUqdFY",
+"https://www.youtube.com/embed/9Oc85gWBt1I",
+"https://www.youtube.com/embed/9aYanpCBkzg",
+"https://www.youtube.com/embed/9ynHSTRmD04",
+"https://www.youtube.com/embed/AIk-iz2b7Y0",
+"https://www.youtube.com/embed/AJVN7POj9CM",
+"https://www.youtube.com/embed/ALVYakvKpic",
+"https://www.youtube.com/embed/AQ4onATtkqY",
+"https://www.youtube.com/embed/ATLRgHNHkJs",
+"https://www.youtube.com/embed/ATro4QKB19A",
+"https://www.youtube.com/embed/Atl5kVB6QXA",
+"https://www.youtube.com/embed/Aut3xvaHtkk",
+"https://www.youtube.com/embed/B87zygRI0Es",
+"https://www.youtube.com/embed/BBAZecLBzVk",
+"https://www.youtube.com/embed/Bc4YuC3ROag",
+"https://www.youtube.com/embed/CHLgobHhc3I",
+"https://www.youtube.com/embed/CRxb_KzJty0",
+"https://www.youtube.com/embed/Cb9k6hmaXHc",
+"https://www.youtube.com/embed/CoxuAY_EpIA",
+"https://www.youtube.com/embed/CrMP4Dqj9G8",
+"https://www.youtube.com/embed/DFbLd-krO_Y",
+"https://www.youtube.com/embed/DUYW5dionvU",
+"https://www.youtube.com/embed/Do9Uj7FJN9A",
+"https://www.youtube.com/embed/DsqfRfjik8g",
+"https://www.youtube.com/embed/Dx_1qEnOxIM",
+"https://www.youtube.com/embed/EDPFPecn9k0",
+"https://www.youtube.com/embed/EH-pv354FEM",
+"https://www.youtube.com/embed/EV7K7tPp3hg",
+"https://www.youtube.com/embed/EeeOAQgM8VU",
+"https://www.youtube.com/embed/FVGITomWaHc",
+"https://www.youtube.com/embed/FaQWiK_R6iY",
+"https://www.youtube.com/embed/FkaqKZWo5lM",
+"https://www.youtube.com/embed/Fw3yJHPtms4",
+"https://www.youtube.com/embed/FyrLDWwQGgs",
+"https://www.youtube.com/embed/GaNeH5OMpWs",
+"https://www.youtube.com/embed/Gy5yE9aSO-Q",
+"https://www.youtube.com/embed/HGq8nH0I6j0",
+"https://www.youtube.com/embed/HVw59930BiU",
+"https://www.youtube.com/embed/INZVMxlLNWc",
+"https://www.youtube.com/embed/IQKloe3hdYw",
+"https://www.youtube.com/embed/Iwiq0vCyzgY",
+"https://www.youtube.com/embed/J8siPdPwcmQ",
+"https://www.youtube.com/embed/JmVoD_JQZqw",
+"https://www.youtube.com/embed/Jtq-d3p4s34",
+"https://www.youtube.com/embed/K0QXiRx3xHY",
+"https://www.youtube.com/embed/L6cto6vVh6M",
+"https://www.youtube.com/embed/L9pfnS0yBRo",
+"https://www.youtube.com/embed/LehRQk2o4ZI",
+"https://www.youtube.com/embed/LpHWuwKwwC4",
+"https://www.youtube.com/embed/MTjHED-Q4ck",
+"https://www.youtube.com/embed/N86K8B6pZzI",
+"https://www.youtube.com/embed/NIZfaQuPB0Y",
+"https://www.youtube.com/embed/Nr8YkttB06M",
+"https://www.youtube.com/embed/O2MWCpUSEWA",
+"https://www.youtube.com/embed/OY3L1DPgxjA",
+"https://www.youtube.com/embed/OlbuRkxU8es",
+"https://www.youtube.com/embed/Ow-K_xHjocE",
+"https://www.youtube.com/embed/P1LZzCKfJnc",
+"https://www.youtube.com/embed/PE5WlyWrHO4",
+"https://www.youtube.com/embed/Q7fw8STE9mo",
+"https://www.youtube.com/embed/QBAwbYuy-Ts",
+"https://www.youtube.com/embed/QXC7jrQlCj4",
+"https://www.youtube.com/embed/QZanPjJovro",
+"https://www.youtube.com/embed/Qfw3QBEN_NE",
+"https://www.youtube.com/embed/RMl1xxO7dEE",
+"https://www.youtube.com/embed/RmquhVSUQx8",
+"https://www.youtube.com/embed/RqJ1Y-RouwQ",
+"https://www.youtube.com/embed/RtaAIPoTsYw",
+"https://www.youtube.com/embed/S1POcNZWzQo",
+"https://www.youtube.com/embed/S59KUGWUi0A",
+"https://www.youtube.com/embed/SSpheYI-I1M",
+"https://www.youtube.com/embed/TeiRLvI7DIY",
+"https://www.youtube.com/embed/Tsc733-UI8g",
+"https://www.youtube.com/embed/UBvm30Ou2Hk",
+"https://www.youtube.com/embed/UIk84ojnzEQ",
+"https://www.youtube.com/embed/V2Ik9MfZRP8",
+"https://www.youtube.com/embed/VeUhnozSM8Y",
+"https://www.youtube.com/embed/WFzTC2YK80Y",
+"https://www.youtube.com/embed/WjcwtaWXRWc",
+"https://www.youtube.com/embed/WkIuIMbKny8",
+"https://www.youtube.com/embed/WwbfKx8Q9aI",
+"https://www.youtube.com/embed/XPq0JHk33BY",
+"https://www.youtube.com/embed/XTohNpvSrAQ",
+"https://www.youtube.com/embed/XWY2B3EEJXU",
+"https://www.youtube.com/embed/YSRV9SMjWtg",
+"https://www.youtube.com/embed/YV46TiJgbS0",
+"https://www.youtube.com/embed/YY5toCMk25g",
+"https://www.youtube.com/embed/Ypl6K3I-coE",
+"https://www.youtube.com/embed/Yr4dtBDHgcE",
+"https://www.youtube.com/embed/YxHUm0DpQ-M",
+"https://www.youtube.com/embed/Z6Efo4xGv-o",
+"https://www.youtube.com/embed/ZMpRpPNSHGI",
+"https://www.youtube.com/embed/_6EHNWJGY6M",
+"https://www.youtube.com/embed/_pJHy-EfanU",
+"https://www.youtube.com/embed/_qSA9YwJD14",
+"https://www.youtube.com/embed/aKfW4_GWOLQ",
+"https://www.youtube.com/embed/aMOXMgV8IxE",
+"https://www.youtube.com/embed/aMqcWBTtf24",
+"https://www.youtube.com/embed/aaWNzYmgZt0",
+"https://www.youtube.com/embed/abIkEYU-oSI",
+"https://www.youtube.com/embed/ambANBIHjCI",
+"https://www.youtube.com/embed/auTqBZVgAsQ",
+"https://www.youtube.com/embed/bEUQQwaPWLc",
+"https://www.youtube.com/embed/cBk35t3W1bU",
+"https://www.youtube.com/embed/ceYgF6lNeOE",
+"https://www.youtube.com/embed/d0IY1zXgErc",
+"https://www.youtube.com/embed/dLwE1rPwluA",
+"https://www.youtube.com/embed/dSjMmBg4x40",
+"https://www.youtube.com/embed/dVy1RbzPqno",
+"https://www.youtube.com/embed/dq9zlRG9XNE",
+"https://www.youtube.com/embed/eXj6BkDgQLM",
+"https://www.youtube.com/embed/f-D1XzNWX6Y",
+"https://www.youtube.com/embed/f18W_ITQGa8",
+"https://www.youtube.com/embed/fHqc-B6MdgU",
+"https://www.youtube.com/embed/fOakj-e9LwU",
+"https://www.youtube.com/embed/fPIDGemmbkY",
+"https://www.youtube.com/embed/fztRg9LCuC8",
+"https://www.youtube.com/embed/g1GgVJUXEmw",
+"https://www.youtube.com/embed/g2XWNrfALRw",
+"https://www.youtube.com/embed/h3JjF3yoFHc",
+"https://www.youtube.com/embed/hDgvl4mpuT0",
+"https://www.youtube.com/embed/hVuuq3L2kfo",
+"https://www.youtube.com/embed/hhuQLIg95_0",
+"https://www.youtube.com/embed/hodG5ExgqnQ",
+"https://www.youtube.com/embed/jCHYdxbgCeI",
+"https://www.youtube.com/embed/jCn-rapiu1s",
+"https://www.youtube.com/embed/jo-uQflBuOo",
+"https://www.youtube.com/embed/k-j-k1WzQm8",
+"https://www.youtube.com/embed/kIA_CSXK96M",
+"https://www.youtube.com/embed/kYIQQsro0n4",
+"https://www.youtube.com/embed/khNV9CUJgPs",
+"https://www.youtube.com/embed/kvUNSV_nO_0",
+"https://www.youtube.com/embed/lNLUYMh4lN0",
+"https://www.youtube.com/embed/lV-DvwpfRJA",
+"https://www.youtube.com/embed/lcVPVyDVs4c",
+"https://www.youtube.com/embed/lvqjyjJH8fo",
+"https://www.youtube.com/embed/mgpunPQD2e8",
+"https://www.youtube.com/embed/mnbNVV-CTig",
+"https://www.youtube.com/embed/nDCk0LVJGE0",
+"https://www.youtube.com/embed/nSFjBiDAyPY",
+"https://www.youtube.com/embed/naXBk4mMW6o",
+"https://www.youtube.com/embed/ncefyvC4sJ0",
+"https://www.youtube.com/embed/o3OAW2oiGPM",
+"https://www.youtube.com/embed/oBTt8aOASRc",
+"https://www.youtube.com/embed/pPswraOcW28",
+"https://www.youtube.com/embed/posTc56basM",
+"https://www.youtube.com/embed/qDOXjoYrRYM",
+"https://www.youtube.com/embed/qmquG7FkDMI",
+"https://www.youtube.com/embed/qtwT1LcD72o",
+"https://www.youtube.com/embed/rFU4tK1w6aQ",
+"https://www.youtube.com/embed/rjpE9IaQFhk",
+"https://www.youtube.com/embed/sRiNyFym6VU",
+"https://www.youtube.com/embed/t9HyKL3hiTM",
+"https://www.youtube.com/embed/tFjjlVLx330",
+"https://www.youtube.com/embed/tgKolRdI7ms",
+"https://www.youtube.com/embed/u1vtZ-1IGwQ",
+"https://www.youtube.com/embed/uK_BzL9fyN4",
+"https://www.youtube.com/embed/uX24X2Cz61I",
+"https://www.youtube.com/embed/ug2cXtlvJA8",
+"https://www.youtube.com/embed/ugPbHiiEjmA",
+"https://www.youtube.com/embed/v3NOPzEyonU",
+"https://www.youtube.com/embed/wW7P_FyLDB4",
+"https://www.youtube.com/embed/wsw-ES0vHcs",
+"https://www.youtube.com/embed/xKeCmpZ0-U4",
+"https://www.youtube.com/embed/xbAgLlYCrzA",
+"https://www.youtube.com/embed/xnI-K0lwY_g",
+"https://www.youtube.com/embed/xpYkMUlshJY",
+"https://www.youtube.com/embed/xw3NqalNTBQ",
+"https://www.youtube.com/embed/xzQLE8l9Z84",
+"https://www.youtube.com/embed/y2qNidYZbCo",
+"https://www.youtube.com/embed/y58o7jBqqiM",
+"https://www.youtube.com/embed/yA5GQjeLFrE",
+"https://www.youtube.com/embed/yYHiGau0ioU",
+"https://www.youtube.com/embed/zJMQBDUt9GI",
+"https://www.youtube.com/embed/zjVDQm92OmU"
+,
+"https://www.youtube.com/embed/fD6E5Dru5Ag",
+"https://www.youtube.com/embed/fGlmOxaeg5E",
+"https://www.youtube.com/embed/fPIDGemmbkY",
+"https://www.youtube.com/embed/fqk51io982E",
+"https://www.youtube.com/embed/fsgkzS0bOgs",
+"https://www.youtube.com/embed/fzeVLvOyqY4",
+"https://www.youtube.com/embed/fztRg9LCuC8",
+"https://www.youtube.com/embed/g2gSY8olzsQ",
+"https://www.youtube.com/embed/-C9fF7kCYOs",
+"https://www.youtube.com/embed/-CLcO4YOg74",
+"https://www.youtube.com/embed/-TD0vqOnbFk",
+"https://www.youtube.com/embed/-Vpo7C3S44M",
+"https://www.youtube.com/embed/-Wf3dBYUbg0",
+"https://www.youtube.com/embed/-Yj8gmZ4cjo",
+"https://www.youtube.com/embed/-eLDqHrTLNg",
+"https://www.youtube.com/embed/0588MGm9FT4",
+"https://www.youtube.com/embed/0M2VnqmK6aI",
+"https://www.youtube.com/embed/0QQp0blQ0WU",
+"https://www.youtube.com/embed/0j39lZHgL-E",
+"https://www.youtube.com/embed/0nCIFouezbI",
+"https://www.youtube.com/embed/0q4XV-hxYks",
+"https://www.youtube.com/embed/1Jdjte8Ccx4",
+"https://www.youtube.com/embed/1cCbz65IP8g",
+"https://www.youtube.com/embed/1frOg-B82BI",
+"https://www.youtube.com/embed/23U3vz7RH9A",
+"https://www.youtube.com/embed/23Xuiv6L_iM",
+"https://www.youtube.com/embed/2tsbMyHksmo",
+"https://www.youtube.com/embed/2v03NRoUuTo",
+"https://www.youtube.com/embed/38M2IhP3_TA",
+"https://www.youtube.com/embed/3dMTySIHRpk",
+"https://www.youtube.com/embed/3sq2TZK6WCQ",
+"https://www.youtube.com/embed/411jnEGc5Rk",
+"https://www.youtube.com/embed/4RzQ_UOoRkw",
+"https://www.youtube.com/embed/4cuI1CZr-wY",
+"https://www.youtube.com/embed/59cQTXZyhAo",
+"https://www.youtube.com/embed/5OY3aYC57CM",
+"https://www.youtube.com/embed/5Px4heRHehU",
+"https://www.youtube.com/embed/5nsSdOkpfoU",
+"https://www.youtube.com/embed/680pbX_8JJE",
+"https://www.youtube.com/embed/6Fi5GDjbxvA",
+"https://www.youtube.com/embed/6aX7rZ6N-1I",
+"https://www.youtube.com/embed/6pWMQWadYaQ",
+"https://www.youtube.com/embed/6y7N8hCez8U",
+"https://www.youtube.com/embed/7AwJhpfveJQ",
+"https://www.youtube.com/embed/7jAHMDNPNpk",
+"https://www.youtube.com/embed/80DPjAx2Jd4",
+"https://www.youtube.com/embed/8FtU0a0Qx4A",
+"https://www.youtube.com/embed/8HuwIV2RCds",
+"https://www.youtube.com/embed/8MFGDBPYbXc",
+"https://www.youtube.com/embed/8VYHg1P0G0I",
+"https://www.youtube.com/embed/9DKBqfO950Y",
+"https://www.youtube.com/embed/9JDPbIws3UQ",
+"https://www.youtube.com/embed/9JqM6qV_sOk",
+"https://www.youtube.com/embed/A89PQMSYuPA",
+"https://www.youtube.com/embed/AF5JdcUiLBQ",
+"https://www.youtube.com/embed/ARSjEo3j1XE",
+"https://www.youtube.com/embed/AZ4pMISdUsk",
+"https://www.youtube.com/embed/Aa2HdIFks30",
+"https://www.youtube.com/embed/B-_WQJ8kD1g",
+"https://www.youtube.com/embed/BKzml3iLc2Y",
+"https://www.youtube.com/embed/BOY2ecoPJDQ",
+"https://www.youtube.com/embed/Bk5dwBRxcQg",
+"https://www.youtube.com/embed/CFnmz6HqiNc",
+"https://www.youtube.com/embed/CI_il0aWg-w",
+"https://www.youtube.com/embed/CNQlNZ1Z5go",
+"https://www.youtube.com/embed/COXUoHCPHbM",
+"https://www.youtube.com/embed/CYa62lxk_-A",
+"https://www.youtube.com/embed/CeHz8FT5C7k",
+"https://www.youtube.com/embed/DGAQEMOMJ2E",
+"https://www.youtube.com/embed/DIOGE3zRvxI",
+"https://www.youtube.com/embed/DT75b4Ju-i4",
+"https://www.youtube.com/embed/EBqYoyoU6b0",
+"https://www.youtube.com/embed/EYWYdinNywI",
+"https://www.youtube.com/embed/FT_XgZgjI-o",
+"https://www.youtube.com/embed/FThWfNt2GdA",
+"https://www.youtube.com/embed/F_Q4xsrLEEk",
+"https://www.youtube.com/embed/FaZUMMI64Y8",
+"https://www.youtube.com/embed/GCXTF6x1P5E",
+"https://www.youtube.com/embed/GEODtBRgAOg",
+"https://www.youtube.com/embed/GKNcRyQGOGM",
+"https://www.youtube.com/embed/GQkuWczvBL8",
+"https://www.youtube.com/embed/GYlYWGzNVsI",
+"https://www.youtube.com/embed/H4X3XLE4keU",
+"https://www.youtube.com/embed/HD-4AK2EC9w",
+"https://www.youtube.com/embed/HKvz7sNq8C8",
+"https://www.youtube.com/embed/I94oYjYDqps",
+"https://www.youtube.com/embed/IDVZBKb6K4s",
+"https://www.youtube.com/embed/IDblfkf_hyA",
+"https://www.youtube.com/embed/IIwGHAqRy9E",
+"https://www.youtube.com/embed/JLjqhqWcYx8",
+"https://www.youtube.com/embed/JmVoD_JQZqw",
+"https://www.youtube.com/embed/K6GkhfHJNCc",
+"https://www.youtube.com/embed/KGYDJiVv86A",
+"https://www.youtube.com/embed/K_d6f9uV5tg",
+"https://www.youtube.com/embed/KaqAtbCUgTM",
+"https://www.youtube.com/embed/LOIdWMXCOXQ",
+"https://www.youtube.com/embed/Lu7PGBtQ4Ok",
+"https://www.youtube.com/embed/MC1dhHWtLVw",
+"https://www.youtube.com/embed/MivCb8Hcn9A",
+"https://www.youtube.com/embed/MkVLLjVBUqs",
+"https://www.youtube.com/embed/MzjS2GZ-FXA",
+"https://www.youtube.com/embed/NDGvcaISR9o",
+"https://www.youtube.com/embed/NXM5Bmd51EQ",
+"https://www.youtube.com/embed/NlQzd9NJAjM",
+"https://www.youtube.com/embed/OVtbVp5ZwS4",
+"https://www.youtube.com/embed/OWjh_ZDpK3Q",
+"https://www.youtube.com/embed/Op-LS8PCCLw",
+"https://www.youtube.com/embed/OtHbfpxO0L4",
+"https://www.youtube.com/embed/P039QKgNGyY",
+"https://www.youtube.com/embed/P8LXsEf_sRM",
+"https://www.youtube.com/embed/PNQBMNbZcwo",
+"https://www.youtube.com/embed/PVRJhdQf-3E",
+"https://www.youtube.com/embed/QC5D2KV8d8c",
+"https://www.youtube.com/embed/QNqbEzd9l20",
+"https://www.youtube.com/embed/QYsLIrtZQPs",
+"https://www.youtube.com/embed/Qe2fUpcaSuM",
+"https://www.youtube.com/embed/RpF7783hez0",
+"https://www.youtube.com/embed/RxRjmS4yTKc",
+"https://www.youtube.com/embed/S4Hn_m0hWvU",
+"https://www.youtube.com/embed/SC2eSujzrUY",
+"https://www.youtube.com/embed/Sg0T5md7-FE",
+"https://www.youtube.com/embed/SgzWIbI4i8I",
+"https://www.youtube.com/embed/Sm-7Mn1tAWs",
+"https://www.youtube.com/embed/Sz_-r6xnOAY",
+"https://www.youtube.com/embed/T7u_1vOAcfs",
+"https://www.youtube.com/embed/TQ_omS6MzNU",
+"https://www.youtube.com/embed/U7yVpJr1LvY",
+"https://www.youtube.com/embed/UP6rhCaOJB4",
+"https://www.youtube.com/embed/UcUGTTfV2aA",
+"https://www.youtube.com/embed/VihkPYPLY5w",
+"https://www.youtube.com/embed/VkZrY61zBr4",
+"https://www.youtube.com/embed/Wf84NJSiAeU",
+"https://www.youtube.com/embed/WlREWi26maM",
+"https://www.youtube.com/embed/XPq0JHk33BY",
+"https://www.youtube.com/embed/XR6_O1JlkrM",
+"https://www.youtube.com/embed/XWF0Xdnp_Iw",
+"https://www.youtube.com/embed/Xx5jfbXp6QY",
+"https://www.youtube.com/embed/YNZly9bMjM4",
+"https://www.youtube.com/embed/ZW1tf5JQLv0",
+"https://www.youtube.com/embed/ZY-5Du0yBPI",
+"https://www.youtube.com/embed/ZnSg359re-w",
+"https://www.youtube.com/embed/_pJHy-EfanU",
+"https://www.youtube.com/embed/aPkOx5kV-rM",
+"https://www.youtube.com/embed/atXCSltcu5E",
+"https://www.youtube.com/embed/b7CUu-WZhwo",
+"https://www.youtube.com/embed/cNu0smgCSZc",
+"https://www.youtube.com/embed/cddk9knbF-U",
+"https://www.youtube.com/embed/cg2E-lQA2EQ",
+"https://www.youtube.com/embed/clSEJNnCw0M",
+"https://www.youtube.com/embed/d9xExvEkcIQ",
+"https://www.youtube.com/embed/dJvqzTZqIP8",
+"https://www.youtube.com/embed/dfsOl6BA9zI",
+"https://www.youtube.com/embed/dnANhHVMqqs",
+"https://www.youtube.com/embed/dy-ZhKiLRjA",
+"https://www.youtube.com/embed/e4Z5kwHsiuE",
+"https://www.youtube.com/embed/eXj6BkDgQLM",
+"https://www.youtube.com/embed/etLep4U5VXo",
+"https://www.youtube.com/embed/fCtv97KcaQw",
+"https://www.youtube.com/embed/fD6E5Dru5Ag",
+"https://www.youtube.com/embed/fGlmOxaeg5E",
+"https://www.youtube.com/embed/fPIDGemmbkY",
+"https://www.youtube.com/embed/fqk51io982E",
+"https://www.youtube.com/embed/fsgkzS0bOgs",
+"https://www.youtube.com/embed/fzeVLvOyqY4",
+"https://www.youtube.com/embed/fztRg9LCuC8",
+"https://www.youtube.com/embed/g2gSY8olzsQ",
+"https://www.youtube.com/embed/g4mrR6QOAws",
+"https://www.youtube.com/embed/gGBjaNNhuQ0",
+"https://www.youtube.com/embed/hI-Qi2Ztu_U",
+"https://www.youtube.com/embed/hw-O558y4Ps",
+"https://www.youtube.com/embed/iFnwmTeSlAQ",
+"https://www.youtube.com/embed/iNGLBVfc-KI",
+"https://www.youtube.com/embed/iU8UE7c9rW8",
+"https://www.youtube.com/embed/jF4dd14TjB4",
+"https://www.youtube.com/embed/jfwkmMl4-9g",
+"https://www.youtube.com/embed/k1JfGzxmwRs",
+"https://www.youtube.com/embed/kESuUfqG10U",
+"https://www.youtube.com/embed/kLHXgE8nyTw",
+"https://www.youtube.com/embed/l8zz0JXmZv4",
+"https://www.youtube.com/embed/lE5_2JvuSPw",
+"https://www.youtube.com/embed/lJ2i01SbObA",
+"https://www.youtube.com/embed/lY-gJvH5g1A",
+"https://www.youtube.com/embed/lepDYOTpt4Y",
+"https://www.youtube.com/embed/liLBHhrWG5s",
+"https://www.youtube.com/embed/luxGQp67Uf4",
+"https://www.youtube.com/embed/nSFjBiDAyPY",
+"https://www.youtube.com/embed/nSs7pkC4BIw",
+"https://www.youtube.com/embed/nv49dPm98D4",
+"https://www.youtube.com/embed/o9_2uvEboH0",
+"https://www.youtube.com/embed/p8hKtWYnLlg",
+"https://www.youtube.com/embed/piR4vf2Mc_o",
+"https://www.youtube.com/embed/pzxrOPa0mE0",
+"https://www.youtube.com/embed/q2qGg3hi49A",
+"https://www.youtube.com/embed/qY_lyq5X2mo",
+"https://www.youtube.com/embed/qu0nUIlbCo8",
+"https://www.youtube.com/embed/qz8mw_hL6aU",
+"https://www.youtube.com/embed/r4Si1wJqNp0",
+"https://www.youtube.com/embed/riWs1z6RvaQ",
+"https://www.youtube.com/embed/sRUnIhwIfrU",
+"https://www.youtube.com/embed/sjm3VhwOvcQ",
+"https://www.youtube.com/embed/tH_4n4e-uM8",
+"https://www.youtube.com/embed/tV-mej0XLYg",
+"https://www.youtube.com/embed/tVhv5PNrBxM",
+"https://www.youtube.com/embed/tcBUQlLSKxw",
+"https://www.youtube.com/embed/tiDs1EERsvA",
+"https://www.youtube.com/embed/u89Ztxab7oo",
+"https://www.youtube.com/embed/uPGoJnwZYRY",
+"https://www.youtube.com/embed/uQO8wPLXst0",
+"https://www.youtube.com/embed/ugVOslJV73U",
+"https://www.youtube.com/embed/vSmmEiiGrgs",
+"https://www.youtube.com/embed/vexncr0rSIc",
+"https://www.youtube.com/embed/vihRtYXyOp0",
+"https://www.youtube.com/embed/wOlKcIbHXD8",
+"https://www.youtube.com/embed/wmNC6G4rDY0",
+"https://www.youtube.com/embed/xoQZhjXoCpM",
+"https://www.youtube.com/embed/y0cp6CDPq1k",
+"https://www.youtube.com/embed/y80YGDqK9AM",
+"https://www.youtube.com/embed/yYcaHsCnwBg",
+"https://www.youtube.com/embed/ydHPeReFre8",
+"https://www.youtube.com/embed/z-s1nMVa79w",
+"https://www.youtube.com/embed/zqxsH-FgjZ4"
+
+];
+
+function criaIframe(src, width = 300, height = 300) {
+  const iframe = document.createElement('iframe');
+  iframe.src = src;
+  iframe.width = width;
+  iframe.height = height;
+  iframe.setAttribute('frameborder', '0');
+  iframe.setAttribute('allowfullscreen', '');
+  return iframe;
+}
+
+botao.onclick = function () {
+  let final = indexe + limiteporvez;
+
+  for (; indexe < final && indexe < videos.length; indexe++) {
+    contador++;
+
+    // cria e adiciona o vídeo
+    let iframe = criaIframe(videos[indexe]);
+    resultado.appendChild(iframe);
+
+    if (contador === 4) {
+      // Anúncio para contador 1
+      const div = document.createElement('div');
+      div.innerHTML = `
+        <iframe src="https://sistema01.pages.dev/" width="350" height="250" frameborder="0" allowfullscreen></iframe>
+          <a href="https://sistema01.pages.dev/" 
+          style="display: inline-block; background-color: blue; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-weight: bold; font-family: sans-serif;">
+          ABRIR TELA CHEIA
+        </a> 
+        <br>
+        <br>
+        <iframe src="https://espiritosantoes-com-brprincipal.pages.dev/vps01" width="350" height="250" frameborder="0" allowfullscreen></iframe>
+          <a href="https://espiritosantoes-com-brprincipal.pages.dev/vps01" 
+          style="display: inline-block; background-color: blue; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-weight: bold; font-family: sans-serif;">
+          ABRIR TELA CHEIA
+        </a>
+        <br>
+        <br>
+        <iframe src="https://imagemprog.pages.dev/" width="350" height="250" frameborder="0" allowfullscreen></iframe>
+          <a href="https://imagemprog.pages.dev/" 
+          style="display: inline-block; background-color: blue; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-weight: bold; font-family: sans-serif;">
+          ABRIR TELA CHEIA
+        </a>
+
+      `;
+      resultado.appendChild(div);
+      
+    } 
+
+    if (contador === 5) {
+      // Anúncio para contador 1
+      const div = document.createElement('div');
+      div.innerHTML = `
+        <iframe src="https://conteudo01.pages.dev/" width="350" height="250" frameborder="0" allowfullscreen></iframe>
+          <a href="https://conteudo01.pages.dev/" 
+          style="display: inline-block; background-color: blue; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-weight: bold; font-family: sans-serif;">
+          ABRIR TELA CHEIA
+        </a> 
+        <br>
+        <br>
+         <iframe src="https://espiritosantoes-com-brprincipal.pages.dev/12" width="350" height="250" frameborder="0" allowfullscreen></iframe>
+          <a href="https://espiritosantoes-com-brprincipal.pages.dev/12" 
+          style="display: inline-block; background-color: blue; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-weight: bold; font-family: sans-serif;">
+          ABRIR TELA CHEIA
+        </a> 
+        <br>
+        <br>
+      `;
+      resultado.appendChild(div);
+      contador=0;
+    } 
+
+    if (contador === 1) {
+      // Anúncio para contador 1
+      const div = document.createElement('div');
+      div.innerHTML = `
+       <iframe src="https://social-5rp.pages.dev/" width="350" height="250" frameborder="0" allowfullscreen></iframe>
+          <a href="https://social-5rp.pages.dev/" 
+          style="display: inline-block; background-color: blue; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-weight: bold; font-family: sans-serif;">
+          ABRIR TELA CHEIA
+        </a> 
+        <br>
+        <br>
+        <iframe src="https://uteis01.pages.dev/servicobancario" width="350" height="250" frameborder="0" allowfullscreen></iframe>
+        <a href="https://uteis01.pages.dev/servicobancario" 
+          style="display: inline-block; background-color: blue; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-weight: bold; font-family: sans-serif;">
+          ABRIR TELA CHEIA
+        </a> 
+        <br>
+        <br>
+        <br>
+                <iframe src="https://espiritosantoes-com-brprincipal.pages.dev/vps01" width="350" height="250" frameborder="0" allowfullscreen></iframe>
+          <a href="https://espiritosantoes-com-brprincipal.pages.dev/vps01" 
+          style="display: inline-block; background-color: blue; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-weight: bold; font-family: sans-serif;">
+          ABRIR TELA CHEIA
+        </a>
+        <br>
+        <br>
+        <iframe src="https://imagemprog.pages.dev/" width="350" height="250" frameborder="0" allowfullscreen></iframe>
+          <a href="https://imagemprog.pages.dev/" 
+          style="display: inline-block; background-color: blue; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-weight: bold; font-family: sans-serif;">
+          ABRIR TELA CHEIA
+        </a>
+      `;
+      resultado.appendChild(div);
+    
+    } 
+    
+    else if (contador === 2) {
+      // Anúncio para contador 2 (diferente do 1)
+      const div = document.createElement('div');
+      div.innerHTML = `
+        <iframe src="https://encurtadorko.pages.dev/" width="350" height="500" frameborder="0" allowfullscreen></iframe>
+        <a href="http://www.espiritosanto-es.com.br/cloudflare" 
+          style="display: inline-block; background-color: blue; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-weight: bold; font-family: sans-serif;">
+          ABRIR TELA CHEIA
+        </a>
+
+      `;
+      resultado.appendChild(div);
+       // reseta contador depois do 2
+    }
+  }
+
+  if (indexe >= videos.length) {
+    botao.disabled = true;
+    botao.textContent = 'Chegamos no limite já';
+  }
+};
+</script>
+<script>
+  let urlslarissa = [
+    "https://share.google/GmZYgONVHIvptSwvv",
+    "https://www.larissasaib.com.br/",
+    "https://ig.rdstation.com/dralarissasaib",
+    "https://www.doctoralia.com.br/larissa-goes-duarte-saib/dermatologista/sao-paulo"
+  ];
+  let indexLarissa = Math.floor(Math.random() * urlslarissa.length);
+  let larissa = document.getElementById('larissa');
+  larissa.href = urlslarissa[indexLarissa];
+</script>
+
+<script>
+  let urlscredito = [
+    "https://share.google/KWgHRCKwLAg6RZDzh",
+    "https://www.geocredibnk.com.br/",
+    "https://www.instagram.com/geocredibnkvitoria/",
+    "https://wa.me/27997269454"
+  ];
+  let indexCredito = Math.floor(Math.random() * urlscredito.length);
+  let credito = document.getElementById('credito');
+  credito.href = urlscredito[indexCredito];
+</script>
+<script>
+  let oportunidadeurls = [
+    "https://airbnbn3.pages.dev/",
+    "https://br.pinterest.com/pin/546835579793085353/",
+    "https://br.pinterest.com/pin/546835579793036955/",
+    "https://refadav.com/?ref=Kt5Cug_KFFFDTyShljj9ScDkqv0FY5tK",
+  ];
+  let indexoportunidade = Math.floor(Math.random() * oportunidadeurls.length);
+  let oportunidade = document.getElementById('oportunidade');
+  oportunidade.href = oportunidadeurls[indexoportunidade];
+</script>
+<script>
+  //PRODUTOSPARAVENDER
+  let oportunidadeurls2 = [
+    "https://espiritosantoes-com-brprincipal.pages.dev/12",
+    "https://uteis01.pages.dev/servicobancario",
+    "https://espiritosantoes-com-brprincipal.pages.dev/vps01",
+    "https://hostinger.com.br/?REFERRALCODE=SSNVICTORXU8",
+    "https://central.dokehost.com.br/aff.php?aff=90",
+    "https://modeloanuncio01.pages.dev/",
+    "https://imagemprog.pages.dev/",
+    "https://espiritosantoes-com-brprincipal.pages.dev/",
+    "https://uteis01.pages.dev/servicobancario"
+
+
+  ];
+  let indexoportunidade2 = Math.floor(Math.random() * oportunidadeurls2.length);
+  let oportunidade2 = document.getElementById('oportunidade2');
+  oportunidade2.href = oportunidadeurls2[indexoportunidade2];
+</script>
+</body>
+</html>
