@@ -1,0 +1,524 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<!-- Metadados principais -->
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>Contos Sombrios | Histórias de Mistério, Terror e Oculto</title>
+<meta name="description" content="Mergulhe em contos sombrios cheios de mistério, suspense, horror psicológico e elementos sobrenaturais. Explore o lado mais obscuro da ficção." />
+<meta name="keywords" content="contos sombrios, terror, suspense, horror, histórias assustadoras, mistério, sobrenatural, psicológico, ocultismo, lendas urbanas" />
+<meta name="robots" content="index, follow" />
+<meta name="author" content="Equipe Contos Sombrios" />
+
+<!-- Open Graph (Facebook e redes sociais) -->
+<meta property="og:title" content="Contos Sombrios | Histórias de Mistério, Terror e Oculto" />
+<meta property="og:description" content="Contos sombrios e envolventes para quem gosta de suspense, horror e o inexplicável. Prepare-se para entrar na escuridão." />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="pt_BR" />
+<meta property="og:site_name" content="Contos Sombrios" />
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Conan_Rejection_Letter.PNG/250px-Conan_Rejection_Letter.PNG" />
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Contos Sombrios | Histórias Assustadoras e Misteriosas" />
+<meta name="twitter:description" content="Explore contos de terror psicológico, suspense e horror sobrenatural que vão mexer com sua mente." />
+<meta name="twitter:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Conan_Rejection_Letter.PNG/250px-Conan_Rejection_Letter.PNG" />
+
+  <style>
+    /* Reset básico */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Fucking%2C_Austria%2C_street_sign.jpg/250px-Fucking%2C_Austria%2C_street_sign.jpg");      /* Faz a imagem cobrir todo o elemento */
+      background-position: center; 
+      background-repeat:no-repeat;  
+      background-size: 300px 300px;     /* Centraliza a imagem */
+      color: black;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      min-height: 100vh;
+    }
+
+    header, footer {
+      width: 100%;
+      max-width: 1100px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 4rem;
+      margin-bottom: 30px;
+      color: black;
+    }
+
+    main {
+      width: 100%;
+      max-width: 1100px;
+    }
+
+    #video {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      margin-bottom: 30px;
+    }
+
+    iframe {
+      width: 100%;
+      height: 200px;
+      border: none;
+      border-radius: 8px;
+      background: #000;
+    }
+
+    button#btn {
+      background-color: red;
+      border: none;
+      color: white;
+      padding: 12px 25px;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    button#fezes{
+         background-color: #1e88e5;
+      border: none;
+      color: white;
+      padding: 12px 25px;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button#btn:disabled {
+      background-color: #666;
+      cursor: not-allowed;
+    }
+
+    button#btn:hover:not(:disabled) {
+      background-color: #1565c0;
+    }
+
+    footer {
+      font-size: 14px;
+      color: #aaa;
+      margin-top: auto;
+      padding-top: 40px;
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      iframe {
+        height: 180px;
+      }
+
+      button#btn {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Contos Sombrios | Histórias de Mistério, Terror e Oculto</h1>
+  </header>
+
+  <main>
+    <section id="video" aria-label="Galeria de vídeos do Rica Games">
+      <!-- Os vídeos serão carregados via JavaScript -->
+    </section>
+
+    <button id="btn" aria-label="Carregar mais vídeos">Carregar mais vídeos</button>
+    <br>
+    <br>
+    <br>
+   <button id="fezes" style="background-color: red; border: none; padding: 10px 20px; border-radius: 5px;">
+    <a id="credito" href="https://share.google/KWgHRCKwLAg6RZDzh" style="color: white; font-size: 18px; text-decoration: none;" >ESTÁ PRECISANDO DE CRÉDITO? SAIBA COMO +</a>
+  </button>
+  <br>
+  <br>
+  <br>
+   <button id="fezes" style="background-color: red; border: none; padding: 10px 20px; border-radius: 5px;">
+    <a id="larissa" href="https://share.google/GmZYgONVHIvptSwvv" style="color: white; font-size: 18px; text-decoration: none;">Dra Larissa Saib - Medicina Capilar & Estética</a>
+  </button>
+  <br>
+  <br>
+  <br>
+  <br>
+  <button id="fezes" style="background-color: red; border: none; padding: 10px 20px; border-radius: 5px;">
+    <a id="oportunidade" href="https://share.google/GmZYgONVHIvptSwvv" style="color: white; font-size: 18px; text-decoration: none;">FAZER RENDA EXTRA ? SAIBA COMO</a>
+  </button>
+  <br>
+  <br>
+  <br>
+  <br>
+  <button id="fezes" style="background-color: red; border: none; padding: 10px 20px; border-radius: 5px;">
+    <a id="oportunidade2" href="https://share.google/GmZYgONVHIvptSwvv" style="color: white; font-size: 18px; text-decoration: none;">🚨 OFERTA IMPERDÍVEL! 🚨
+    Não perca essa chance única de aproveitar o melhor com descontos incríveis!
+    🎯 É agora ou nunca! Garanta já o seu antes que acabe!</a>
+      </button>
+  <br>
+  <br>
+  <br>
+  <br>
+  <button id="fezes" style="background-color: yellow; border: none; padding: 10px 20px; border-radius: 5px;">
+    <a id="oportunidade3" href="https://espiritosantoes-com-brprincipal.pages.dev/vps01" style="color: black; font-size: 18px; text-decoration: none;">
+      🎯 Servidores VPS potentes e com suporte brasileiro. Ideal para quem busca estabilidade e preço justo com suporte técnico ágil. 🎯
+      🎯 É agora ou nunca!🎯</a>
+      </button>
+  <br>
+  <br>
+  <br>
+  <br>
+
+   
+  </main>
+
+  <footer>
+    &copy;Contos Sombrios | Histórias de Mistério, Terror e Oculto
+    <a href="https://espiritosantoes-com-brprincipal.pages.dev/sitemap">MAPA</a>
+  </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    let indexe = 0;
+const limiteporvez = 1;
+const resultado = document.getElementById('video');
+const botao = document.getElementById('btn');
+let contador = 0;
+const videos = [
+  "https://www.youtube.com/embed/-6Jfm3_wuxE",
+"https://www.youtube.com/embed/-ipKfqnqCb4",
+"https://www.youtube.com/embed/0DGx5y8YTeM",
+"https://www.youtube.com/embed/0o52nELXFvQ",
+"https://www.youtube.com/embed/0sEWNFMVHO4",
+"https://www.youtube.com/embed/1ACWNd6vSyo",
+"https://www.youtube.com/embed/1AYkepKel2U",
+"https://www.youtube.com/embed/1e3CEuxpklY",
+"https://www.youtube.com/embed/2z-GFc3M6aU",
+"https://www.youtube.com/embed/3U2E3n00fZs",
+"https://www.youtube.com/embed/3aUDsnLV8HE",
+"https://www.youtube.com/embed/3fWzoSDsrGM",
+"https://www.youtube.com/embed/3hhrPxSAVAw",
+"https://www.youtube.com/embed/3v9bvYAvpMI",
+"https://www.youtube.com/embed/512jQEscArY",
+"https://www.youtube.com/embed/689RaJB1STY",
+"https://www.youtube.com/embed/6A57Tr0NckI",
+"https://www.youtube.com/embed/6JbUhWJsZ6E",
+"https://www.youtube.com/embed/6NYf_CBiFUc",
+"https://www.youtube.com/embed/6i6Ow5uOfFA",
+"https://www.youtube.com/embed/6z6t19C3Az4",
+"https://www.youtube.com/embed/7BIrqOKXqcU",
+"https://www.youtube.com/embed/7nbGFohE_Ek",
+"https://www.youtube.com/embed/8AaEYKa8NSI",
+"https://www.youtube.com/embed/8LzD-OhULpo",
+"https://www.youtube.com/embed/8bp8INgvas4",
+"https://www.youtube.com/embed/98DzhiGkMCo",
+"https://www.youtube.com/embed/9APYJbuW0-o",
+"https://www.youtube.com/embed/Bsi5v42Li6E",
+"https://www.youtube.com/embed/DL6hqqanBno",
+"https://www.youtube.com/embed/DLN3_xzhm48",
+"https://www.youtube.com/embed/DQB7L27IIeU",
+"https://www.youtube.com/embed/DZ6AqPbj73M",
+"https://www.youtube.com/embed/DukYmKwBGr4",
+"https://www.youtube.com/embed/EZqmQli8jw4",
+"https://www.youtube.com/embed/G4U37Bls8Bw",
+"https://www.youtube.com/embed/GA5doIA0QCQ",
+"https://www.youtube.com/embed/GxK9-27Jbms",
+"https://www.youtube.com/embed/INLHg05dvTQ",
+"https://www.youtube.com/embed/Iqg167B-pxI",
+"https://www.youtube.com/embed/JeC_1ZnbDNs",
+"https://www.youtube.com/embed/JeiTzpCd09k",
+"https://www.youtube.com/embed/JreqEvcuU-M",
+"https://www.youtube.com/embed/M9wesUcKcNo",
+"https://www.youtube.com/embed/MoCoLPIxoSk",
+"https://www.youtube.com/embed/OUEghi7-A08",
+"https://www.youtube.com/embed/P_IVSLM2SW4",
+"https://www.youtube.com/embed/QPhxcSE5SlI",
+"https://www.youtube.com/embed/QRuEa08cHcU",
+"https://www.youtube.com/embed/R1IFtgUgTAk",
+"https://www.youtube.com/embed/RP4aSLYh1rM",
+"https://www.youtube.com/embed/S5UmhfHZXu4",
+"https://www.youtube.com/embed/TCrGqZ1kmSY",
+"https://www.youtube.com/embed/TdM6_J2weDU",
+"https://www.youtube.com/embed/ThnHpzD1KHI",
+"https://www.youtube.com/embed/Tr7EiYJpod0",
+"https://www.youtube.com/embed/URyX_mFlUfE",
+"https://www.youtube.com/embed/UxLpCbdnhzQ",
+"https://www.youtube.com/embed/VMxVFnJgzvw",
+"https://www.youtube.com/embed/VU_WrvNWYu0",
+"https://www.youtube.com/embed/VaWYWvfq0Dg",
+"https://www.youtube.com/embed/VkjYgt84JUs",
+"https://www.youtube.com/embed/W2uV1F-jS-E",
+"https://www.youtube.com/embed/XvseGRQxjmw",
+"https://www.youtube.com/embed/Y1KyMWVMaOY",
+"https://www.youtube.com/embed/YL6y522-P94",
+"https://www.youtube.com/embed/YN9yt2gmRmk",
+"https://www.youtube.com/embed/YlWrDZvf5YI",
+"https://www.youtube.com/embed/ZT5_B6HGx34",
+"https://www.youtube.com/embed/ZydxMhM1mBs",
+"https://www.youtube.com/embed/_Q0gD_xsp3A",
+"https://www.youtube.com/embed/a2N_Ex0sG8I",
+"https://www.youtube.com/embed/akfa4pYSZak",
+"https://www.youtube.com/embed/bR6htiiR00g",
+"https://www.youtube.com/embed/bYrQe8kQCvc",
+"https://www.youtube.com/embed/bZFhxkUOrrs",
+"https://www.youtube.com/embed/cRHX8Ehp5Ok",
+"https://www.youtube.com/embed/dNiaqezk3gM",
+"https://www.youtube.com/embed/etkIwht1oMA",
+"https://www.youtube.com/embed/ezXJNlHkkTY",
+"https://www.youtube.com/embed/gBkw7f72qxU",
+"https://www.youtube.com/embed/gdNR6g5taRo",
+"https://www.youtube.com/embed/h2Z-pI6wdiI",
+"https://www.youtube.com/embed/h8VE31QTOjc",
+"https://www.youtube.com/embed/i-l02aizcaA",
+"https://www.youtube.com/embed/jguL9kMiUxI",
+"https://www.youtube.com/embed/jn282pYHCqo",
+"https://www.youtube.com/embed/jxotX-kZ-N0",
+"https://www.youtube.com/embed/kOKouAU_p1E",
+"https://www.youtube.com/embed/kPwyY32U1qg",
+"https://www.youtube.com/embed/mSW6Jg9OvtA",
+"https://www.youtube.com/embed/n5TWGfz7F50",
+"https://www.youtube.com/embed/nP9CXcxV39M",
+"https://www.youtube.com/embed/nnS3O4wKR2s",
+"https://www.youtube.com/embed/nw_k8cWG03o",
+"https://www.youtube.com/embed/oQbSOK28Vys",
+"https://www.youtube.com/embed/pO3jMDMg0Yk",
+"https://www.youtube.com/embed/rGKkY6qtcqY",
+"https://www.youtube.com/embed/rciYaWf7zUw",
+"https://www.youtube.com/embed/rnHTT55YDNs",
+"https://www.youtube.com/embed/s2j6RwjB-uk",
+"https://www.youtube.com/embed/sceFkw6LVpA",
+"https://www.youtube.com/embed/sk8uc2Rz-N8",
+"https://www.youtube.com/embed/t4c5zmJCowM",
+"https://www.youtube.com/embed/tdcsk2YQj40",
+"https://www.youtube.com/embed/tstCE3r7nKo",
+"https://www.youtube.com/embed/ttFTf8Ac3pI",
+"https://www.youtube.com/embed/uB2AWiyFEjY",
+"https://www.youtube.com/embed/ue5NjbepUk4",
+"https://www.youtube.com/embed/uncA7mbG8ZQ",
+"https://www.youtube.com/embed/vJ5cTwARruw",
+"https://www.youtube.com/embed/vOb2KQdijTY",
+"https://www.youtube.com/embed/vZz8j7ri_Jc",
+"https://www.youtube.com/embed/w-H3NMO5nAA",
+"https://www.youtube.com/embed/w8xG0G47rLc",
+"https://www.youtube.com/embed/wALoqx6FRMU",
+"https://www.youtube.com/embed/wuOEOyvt-Rw",
+"https://www.youtube.com/embed/yrk6NlCKgXY"
+
+];
+
+function criaIframe(src, width = 300, height = 300) {
+  const iframe = document.createElement('iframe');
+  iframe.src = src;
+  iframe.width = width;
+  iframe.height = height;
+  iframe.setAttribute('frameborder', '0');
+  iframe.setAttribute('allowfullscreen', '');
+  return iframe;
+}
+
+botao.onclick = function () {
+  let final = indexe + limiteporvez;
+
+  for (; indexe < final && indexe < videos.length; indexe++) {
+    contador++;
+
+    // cria e adiciona o vídeo
+    let iframe = criaIframe(videos[indexe]);
+    resultado.appendChild(iframe);
+
+    if (contador === 4) {
+      // Anúncio para contador 1
+      const div = document.createElement('div');
+      div.innerHTML = `
+        <iframe src="https://sistema01.pages.dev/" width="350" height="250" frameborder="0" allowfullscreen></iframe>
+          <a href="https://sistema01.pages.dev/" 
+          style="display: inline-block; background-color: blue; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-weight: bold; font-family: sans-serif;">
+          ABRIR TELA CHEIA
+        </a> 
+        <br>
+        <br>
+        <iframe src="https://espiritosantoes-com-brprincipal.pages.dev/vps01" width="350" height="250" frameborder="0" allowfullscreen></iframe>
+          <a href="https://espiritosantoes-com-brprincipal.pages.dev/vps01" 
+          style="display: inline-block; background-color: blue; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-weight: bold; font-family: sans-serif;">
+          ABRIR TELA CHEIA
+        </a>
+        <br>
+        <br>
+        <iframe src="https://imagemprog.pages.dev/" width="350" height="250" frameborder="0" allowfullscreen></iframe>
+          <a href="https://imagemprog.pages.dev/" 
+          style="display: inline-block; background-color: blue; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-weight: bold; font-family: sans-serif;">
+          ABRIR TELA CHEIA
+        </a>
+
+      `;
+      resultado.appendChild(div);
+      
+    } 
+
+    if (contador === 5) {
+      // Anúncio para contador 1
+      const div = document.createElement('div');
+      div.innerHTML = `
+        <iframe src="https://conteudo01.pages.dev/" width="350" height="250" frameborder="0" allowfullscreen></iframe>
+          <a href="https://conteudo01.pages.dev/" 
+          style="display: inline-block; background-color: blue; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-weight: bold; font-family: sans-serif;">
+          ABRIR TELA CHEIA
+        </a> 
+        <br>
+        <br>
+         <iframe src="https://espiritosantoes-com-brprincipal.pages.dev/12" width="350" height="250" frameborder="0" allowfullscreen></iframe>
+          <a href="https://espiritosantoes-com-brprincipal.pages.dev/12" 
+          style="display: inline-block; background-color: blue; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-weight: bold; font-family: sans-serif;">
+          ABRIR TELA CHEIA
+        </a> 
+        <br>
+        <br>
+      `;
+      resultado.appendChild(div);
+      contador=0;
+    } 
+
+    if (contador === 1) {
+      // Anúncio para contador 1
+      const div = document.createElement('div');
+      div.innerHTML = `
+       <iframe src="https://social-5rp.pages.dev/" width="350" height="250" frameborder="0" allowfullscreen></iframe>
+          <a href="https://social-5rp.pages.dev/" 
+          style="display: inline-block; background-color: blue; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-weight: bold; font-family: sans-serif;">
+          ABRIR TELA CHEIA
+        </a> 
+        <br>
+        <br>
+        <iframe src="https://uteis01.pages.dev/servicobancario" width="350" height="250" frameborder="0" allowfullscreen></iframe>
+        <a href="https://uteis01.pages.dev/servicobancario" 
+          style="display: inline-block; background-color: blue; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-weight: bold; font-family: sans-serif;">
+          ABRIR TELA CHEIA
+        </a> 
+        <br>
+        <br>
+        <br>
+                <iframe src="https://espiritosantoes-com-brprincipal.pages.dev/vps01" width="350" height="250" frameborder="0" allowfullscreen></iframe>
+          <a href="https://espiritosantoes-com-brprincipal.pages.dev/vps01" 
+          style="display: inline-block; background-color: blue; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-weight: bold; font-family: sans-serif;">
+          ABRIR TELA CHEIA
+        </a>
+        <br>
+        <br>
+        <iframe src="https://imagemprog.pages.dev/" width="350" height="250" frameborder="0" allowfullscreen></iframe>
+          <a href="https://imagemprog.pages.dev/" 
+          style="display: inline-block; background-color: blue; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-weight: bold; font-family: sans-serif;">
+          ABRIR TELA CHEIA
+        </a>
+      `;
+      resultado.appendChild(div);
+    
+    } 
+    
+    else if (contador === 2) {
+      // Anúncio para contador 2 (diferente do 1)
+      const div = document.createElement('div');
+      div.innerHTML = `
+        <iframe src="https://encurtadorko.pages.dev/" width="350" height="500" frameborder="0" allowfullscreen></iframe>
+        <a href="http://www.espiritosanto-es.com.br/cloudflare" 
+          style="display: inline-block; background-color: blue; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-weight: bold; font-family: sans-serif;">
+          ABRIR TELA CHEIA
+        </a>
+
+      `;
+      resultado.appendChild(div);
+       // reseta contador depois do 2
+    }
+  }
+
+  if (indexe >= videos.length) {
+    botao.disabled = true;
+    botao.textContent = 'Chegamos no limite já';
+  }
+};
+</script>
+<script>
+  let urlslarissa = [
+    "https://share.google/GmZYgONVHIvptSwvv",
+    "https://www.larissasaib.com.br/",
+    "https://ig.rdstation.com/dralarissasaib",
+    "https://www.doctoralia.com.br/larissa-goes-duarte-saib/dermatologista/sao-paulo"
+  ];
+  let indexLarissa = Math.floor(Math.random() * urlslarissa.length);
+  let larissa = document.getElementById('larissa');
+  larissa.href = urlslarissa[indexLarissa];
+</script>
+
+<script>
+  let urlscredito = [
+    "https://share.google/KWgHRCKwLAg6RZDzh",
+    "https://www.geocredibnk.com.br/",
+    "https://www.instagram.com/geocredibnkvitoria/",
+    "https://wa.me/27997269454",
+    "https://uteis01.pages.dev/servicobancario",
+    "https://novorepositorio.pages.dev/credito"
+
+  ];
+  let indexCredito = Math.floor(Math.random() * urlscredito.length);
+  let credito = document.getElementById('credito');
+  credito.href = urlscredito[indexCredito];
+</script>
+<script>
+  let oportunidadeurls = [
+    "https://airbnbn3.pages.dev/",
+    "https://br.pinterest.com/pin/546835579793085353/",
+    "https://br.pinterest.com/pin/546835579793036955/",
+    "https://refadav.com/?ref=Kt5Cug_KFFFDTyShljj9ScDkqv0FY5tK",
+  ];
+  let indexoportunidade = Math.floor(Math.random() * oportunidadeurls.length);
+  let oportunidade = document.getElementById('oportunidade');
+  oportunidade.href = oportunidadeurls[indexoportunidade];
+</script>
+<script>
+  //PRODUTOSPARAVENDER
+  let oportunidadeurls2 = [
+    "https://espiritosantoes-com-brprincipal.pages.dev/12",
+    "https://uteis01.pages.dev/servicobancario",
+    "https://espiritosantoes-com-brprincipal.pages.dev/vps01",
+    "https://hostinger.com.br/?REFERRALCODE=SSNVICTORXU8",
+    "https://central.dokehost.com.br/aff.php?aff=90",
+    "https://modeloanuncio01.pages.dev/",
+    "https://imagemprog.pages.dev/",
+    "https://espiritosantoes-com-brprincipal.pages.dev/",
+    "https://uteis01.pages.dev/servicobancario"
+
+
+  ];
+  let indexoportunidade2 = Math.floor(Math.random() * oportunidadeurls2.length);
+  let oportunidade2 = document.getElementById('oportunidade2');
+  oportunidade2.href = oportunidadeurls2[indexoportunidade2];
+</script>
+</body>
+</html>
