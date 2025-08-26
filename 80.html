@@ -1,0 +1,604 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>Química Geral: Fundamentos, Reações e Estrutura Atômica | Guia Completo</title>
+<meta name="description" content="Aprenda Química Geral com nosso guia completo: conceitos essenciais, estrutura atômica, ligações químicas, tipos de reações, termodinâmica e muito mais para estudantes e entusiastas." />
+<meta name="keywords" content="química geral, fundamentos de química, estrutura atômica, ligações químicas, reações químicas, termodinâmica, tabela periódica, química para estudantes, ciência da química" />
+<meta name="robots" content="index, follow" />
+<meta name="author" content="Jogos Retros, Arcades e Mais!" />
+
+<!-- Open Graph -->
+<meta property="og:title" content="Química Geral: Fundamentos, Reações e Estrutura Atômica | Guia Completo" />
+<meta property="og:description" content="Descubra os principais conceitos da Química Geral: estrutura atômica, tipos de ligações, reações químicas e termodinâmica explicados de forma simples e completa." />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="pt_BR" />
+
+
+  <style>
+    /* Reset básico */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-image: url("data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMTEhUSExMWFhUXFxcZGRgYFxUbFxgYGhgYGBgXFxgYHSgiGBolGxUYIjEiJSkrLi4uHR8zODMtNygtLisBCgoKDg0OGhAQGy0lHSUtLy0tLS0tLS0tLS0tLS0tLS0tLS0tLS4tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAL8BCAMBIgACEQEDEQH/xAAbAAABBQEBAAAAAAAAAAAAAAAEAQIDBQYHAP/EAEYQAAECBAMFBQUFBgQEBwAAAAECEQADITEEEkEFIlFhcQYTgZGhMrHB0fAHFCNC4TNSYnKi8SRDkrIWU7PCFURjZHOj0v/EABkBAQEBAQEBAAAAAAAAAAAAAAEAAgMEBf/EADARAAICAAMFBgYCAwAAAAAAAAABAhEDEiETMUFRcQRhkaGx0RQiUoHB8DOCBTJy/9oADAMBAAIRAxEAPwAKbtfDqmLmKlAg2UFb4LapcJIqKBrdYAk49HeLE5piSGKh7SN79oiz0elnMVk99SKFmtzLDhAoDkEFvEs3CBIn0N/99+7zk9xISpBCd/vt1+BIGULpaNlgMWpdFoKCGN3SX4K1jnWzO1ahK+7z5SJsoJygWJSNNQSB0teNVsCbKThphwqlEJStXdrNUKYlI1YP4GDjoCWtFPtSu3pA4IT/ALJh+MbxQjmQ2mV7Xlzky1KJlIIRYkmTo9g6rmjVjojT1ByZSOQCl/1On3RtlxJ4UGK/FysRTu5kvnmSR7ng2U7DMzsHaz6tygElBiZBiARKgwUROIeIjSYeIBHCGqXCiEKY0kDY2/KJH4wxoeDC0CYhS8NWiHkQ1R8YzlGyMJMKEmHAGJMhiylmGgEQ4GFyQ4Q6FqII9DswhneQEKxiCc8SKmRAubERCoRGTEqlREoREMmTAA5IAGpLCM2e0ipuKEjDSwtKUhSlqcCulRQW3q8gYvcdNSlBJSVC2UJKio6BhzjGbAVMm47FTpbS0jKhWYAmtXyi6nBN2rrGgNrKKsozkFWpAZPgOHWI0DMcxsPZ+cIlJYJJJAuo3U3FrQQ0BEGM/Zr/AJFe4x6Fxn7Nf8ivcY9HOZHEsRhVoSSoEEKKaj8wuk8xDFl2jsXafBCbhZyctcqlppXOA4PWjRxxM4vbx4R1sq0Dpc9RR3ISKbzsc1AWqNA/u4R0Hs3K71H3jIEEylJW1lnL7QGlrQH2c7GqQUzJq0l0K3QDTMAznzjVbN2amRJEpJJABqdXjDVsuJzzsOVK2kkqIJGH04CWhIHVjHVAY5Z9maHxs0/uyiP6kD4R1ECNshVCGgQ+FaAhoh6YRoekREPTDwYaBCiARXh6YY0PREQ8CPFMKVxGpcKBoe0Klog7wx4qMVlQWJkMVA+YwmYwCSrJ4xHnMJmjzxEeK+UMMyHKMMyxEezcoRuUK0K8RDcsRqESFUMaIip2rsKViSDM7ylss2YjjVkkVrGU7L9nZM77wtRm7uJmJSRNmAsigKiDvGtzWOhqUwJ4Anyjl/Z/tacKgS1SSQpcxay7KdanDBtA14bpBR0DC4dMpIQkMkWqTepcqJJLnWANq7blyCEDfWfyDQcT+7Ae1e1ksS/wXWtY3aUS+quLcBGJnKYqXXMQ6iXKlG/hHOc+CLibLaPaUZFJCMqiGZRrWlAK2OrR6MLh8xU9SCXcx6Ocm+JqVHYpisoKuAJ8g8co7FbCTjFTFLJAQuWst+YErKkcgaR0vHY6WrCzpstaVgSll0kH8pu1oyP2TppiKay6+CqR6ED3G8ywimAJNA0S5Yoe2W0BJkgVzTCyalLNcuOD2gAxv2ZTEJxOIKlAUADlnJWbeUdOAjinZ9Ut5hmA1UkhWYumqiTl/Nz9I6v2Ux/fSAcqRlJSwJ0NHBqHFbmFhxLYJhwTDwmHBMAkeWHBMPCIcERERtCtEhlw1oiPAQ5oFn42WhQSpYCjZOp6AQTmiEVUMMLHmiISPQseiIUGEJgGfteSkAmYGJZ6s4LGtqQdEQ1o80OjzRENaPQ8Jh6UxEQZYaRBZIiGRiUrTmSQQ6g44pJSR4EEREA4xEwpaUUhR/MpyE88ovGO27jNqYYpOZE1BpmTLTlSp7KF0i1TSN+oxnu0+z0qlrmKUpwndBUAgHkNSecD5kzIL+0CcjNKxElNUkZkOkhwQ4SpwoeIijT3M0Z0CzBvcSOgitx6FhSlG2YhwAzdLRDIxSpaSMrZi7kEO3DzjLVrvMphnflKVkaboHjHpONoEkgrqS5ZI5PxgSZiN0pFz0s7mBFyiDy46QqPMrLQY0ukEguRRNgH1Opj0CSZac6Dnc5howuNY9GJpEHEqSlRSpQcMWJqDcFrjrGv+zMT0pUpMoKkzFsVOAUlIqWeqataMfif2Y5t846X9nKQMEltVrN3q/pQCO7Y1oahRAqSAKCvElh6mMz9oGFC5cgH/nt0eWuvmIP7US1Kw5ZRSQuUf/sTw8/CK/7RZhRgws1KJiS/MpWn4wIjlexqjSp18PnHaey+xvu8nKXzKOZQKswBtRg1o45szDnukkVzTFIA5slvN/SO74YHIkG+VLjmwf1hkRKEQ8IhgEPCjGaEVoaUwhLx6EBU9YcRDIqO0W2xhUBRTmzFhvJDEgsSCXIppERk9u4xcvF5QghWbio94Cd0EFXs9NY2mw0kSJYKMhy1RTdqaUjnk/axmzkTVrdaAAFJTRwcwLFqBz1aOibE2gJ8lMwF3oWpUUMLQIOCRCmXHhDJmISn2lAa1IFOMAjssLliDE45Ets6wl7X+HWJZwJQoJIBKSx4EihgI5tj8StM9gpKcilpKcylJDk1qGsbCNlsfactWSQkqUoITvZSxAAua1s/OOa4zPnKVl12o7k3rxVWLPsnLmzMQgCqUKzLd2arvzPy4RrLoZTZ0/LDgmHPCBQPhflGTZFiFgCqgjgSzet4A2fi88+YlMzOgS5ZFQQCSt7a0EUPb/GLQqWE+wpKgQbE001YNekQfZ7MUZk00bKl+Zct11hrSwvU3IQ5im7Mn/DBRLDvMQSTb9vMi8lqqIwuE29LRhkysilqC5pIcJQ6p0wpClG/FhGJPKrFF7iNvyADkmJmLqyUlyTwdmFdYyG1cLOno71K04hLKzJTM9hnJASkMKA84FxG0VstScDJkhWbPVSVKChvELSaGlxrGZ2XMEsLXKmlCiMi5ZfeQTUpUKKAYOCAbm0Y/wBr10RWQ4nBgqYbjuSHdgPLUwBisOtKshcgVF/EiLTY80qmkmri/B1aQdtpIKXatWNm4+cdVaMmbMnXhEwkApzVrSrekFSVjJlLXfnwiaWBlDNBZpRAZEgZw3EXHMR6DlSycoSK5k24OH90ejniOyy0RYpW6gVs/wBeUdL7EY5CMHJQSAqpLulNVqIJJFS3D0jmWNO8Q1BQeEbns5tGVhcgzqWpSEvoiWmjlR1LjSO3AnoW0rF5sCylAkKAcG/49OhYeUe+08f4CZ/PL/3N8Yps2H+7KXmdZUosxsJxIYgUpBvazFS5+DMgTHUpaS5zUAWVXUA7BhECMXsMfgBX7k3P5Jf/ALY7chjXjWOLbIZCJksn98Dme6WB6tHQ9g7dlMQpYH4cnjfuwFacREyNRliDG4oSwCQS5YANmJYmg1tpAqNsyWA70UGrv7oC2viMPPQEmeUsXdF/MpgEf2ZxYmd+QQXnrNHFMqBY10vrF20cs27tQSMOpMiavP8AeEqCzlC8ndpeo4qEbj/iOSWcrFKsBqOtxC0CLhSmUAdXbqKn0iq7S4JM0SJarKnpB6GXMil2Vtru5kmTMUDLlywlK2qospJJ8kxd7WxYfDrCgU9+DStpcw+cVUyOafc/xMjkDve7fWqiNLmkdVXLTh5ChLSyZaFEDoCXPExlezBTMxayEhs8yaNW3QB/1dI0vaWeZeFnKH7hH+rdf1hbvQAfs3tNU9KiXYMHKWc1diL6FtHuYE7VyJ2aWuXVKimWpLXzGj8Q/kYsezKgrDoUE5cxUW4kqJJHJ4M2grKjNwVL/wB6YOJcDO9o9jzCMOEKUaolHpUhZbgOHCNGMOUy+7Qohk5Uk1NmBrcw/EJqjkv/ALVRHtLMJSyl8zUYgF+DkgDzgsaOZT5UyViZfffkWl2I0UFO9L1Lxp+wOFAVipmUVm5RZwGzXGjKEZfHSpq1r73MDnUDV6p6kvQgUMXnZnHSsPLda8o785nJJP8Ah3G6P4iBTWNgjcTVN5gDqSwjNI20pOKnoQhK05VTCQWIyIlJqbEXoK2gfH9s5BSRlWN9LAhJzJCkk0BpR7tFBjO1YX3oSMoWQwyh/wBmlDPoKaQJMbGYvtCZyJsua6guZmllgVSxTdBOnJtTWLDYPaBEpTDLlaXLsQohIU5As+ZVa8IyYXY86Ct7taJdn4lEsHvA7kswrzv4Q0wOzKmhKSvQB/BnjmG09lTlSBiN1cnfDU3QlRS7Fgag2r5w2T2mZCUlc2gFKtTxhdm9oHw4kFmCVg5k6KJJAL69HjOV3bG0D9n5SFrHeoKkApSEJ3UHM43i4CeLvUiNPjuxOHmSlmTK7qaMwSyyUkg/m6uRyjF7OxEzMQFsndzJPsqSG3FAXDUjYjtYpICR3QAoAErt5wyWugI5tsycJRXmuCwAuSHcekKlapuZa34prQDgBBWIKRiVFqKqPH9YknrBSoGjpNacDGLNJEMmUFSxTS8QSsKpJp4/2hMFiFBKU05kv1iXFTiE0NXvFTHQIkTAlaSSwdvMEe+FisQslSXUbjX+IR6MYkaYOViYeSVkkECutvTWD5aSSRRwBTQjjDtn4EBQSku7301qOMSokAUCmUddP0EejPhqKa3nK5uTvcNVL/DI6++GrUmU2fUkeVfhAiiU3JIdiHNa6QJjsSFlAAsT1qR8ot6OmiLGWHUevzixwzEE8k14Xipki5Jpz8bwVhMWRud2WNMzuON28oluBhycMFD9oxc8r6Qq8EwJz2re/hCFUAy8GsrzBLigYAub2A5+4xJlQbIkJmTV5glSQEt11g7uQm2peKpUqbmV3ctbvUBNqV6RJhVLlumbua743j0TcwgGYj8um8P7QOcctKgyjuqcciHDdGeJEzpAIzzyDlCmNBvAEG1Kc4f3uFSpCXUpRKSCA7lVnbQ5o8vxcbpRk/t6HkfbIttKMn9t/QTZG1FypveIKR7VcuhZ6DSlo3O2dtSl4OaywpWUgUyudCA8ZYbHWpymSob1SQqodi/vDQT/AOEEhjKo5pvWLikYn2tKnkl4GX2yUVphzf8AU0GyNvy5cqXLVRkCrvqeA5Q/H9qMOUFOYkumwOigTfpGbRs6YH/DcEsGNhqWfk3jDzsYlIypSNam3LWto28eOdRyvrwOvxEs6jkl1rQucX2vk50KSFFnfm4YRW7b7UjEJ7tCcqCCSSd7MGYU0v5QGdhTjXdH1yEVW0MMnDTAV5FrUkm5A1Ys41Bc6c47tRapM9PzBhkT1f5M1VB7IQBUOGGZ/p2asV8zZs4zEBctcrvDlQqZlyqUxOUKSS9Ao8KGI9r9p8VLxM9EuZlSmatKWRKoEkpSHyPRNOkCp7W4wlKTOLCzolMmhBYZOBIpo8fOjPtrhnioU1e+V7ulHaEIzmocW68dCwHZ6ZmlSwUFU1JWjeplABLluBHG8TjsnPFSZSQEldZlkhnJpYOLR7a+1MScTPRKmUl1YJlgMzEMRvUZ+TcIZh8dtJWUoVMzGv8AlgmjbxPtWap0HARxWP8A5GcYyio6rv6+leB7I9iwWtcWK8fYZhtmLmyu+RlypJ1Y7qMxLNwe94fhOy+ImpdJSs0JGYZk5khYCw1CUqHmIdhpWOkpKJYKCKqS8oqILCxdxRm9IYMbjczCYpJTcAoDAkEPlp+UeAa1I7YmL23M9nlrhd6df32M/BYKV7VcdNdeXcr66cR57NTXAeXUhA36FZTmEsU9spq3AxHiOyeKloK1IAygqUyqhISpbnkySOtIYrF42ic6my5Q3dszNcatTNfnCDE4uYkkzFl0qSQVJBUFZgQ3Rar8YysTt+bfCuj/AFGfhcGk9or5ciqKas8IvFJGUM2V3vvXv6W5xNNwq0AlSbBzr4OPKK2ZPHA/CPa8WUnVaGn2PBUW1iq+Crf970/fvNPmkmg8NX0MMmzCzaKHyLeggYTU1NX6iIV4gG+b08o19jzbJ814oKkZSd4kDUjg7GnVoZiZgbKkFwTWopRmD8jf1gYYgD97+n5whnJ/i9PnDevEtl3rxRPIUy0/zDTnTpHogkKGZCkv7aRXzj0Ym7OeJBxdM6fI+z+ZLqMQlzQkoZhfd3tbQwdiJILnGb3BIRfkA5aK2QnEH25qH4gLmn+ohIgkYOYuipk1aeGYSx5S7ecWZ8zVIVXZiVLVmOJc/wAeVA/qUC0VW0djSFrBOKw6cobLLSpROtQgXi7lbET/AMiX1JKj5qcxbYPZTD2QPGnuEFveFIyOB2LLSpKkqmTG/wDblKeVZhEXU5C1pyBCiGZlLQkHX/LCvfGiTg0C5HQM8TJygUHn8oG71FUjISthLL/hoD8VTFeuZPug3D7CnAAGZLQBQZUBwOsxSjqYv5kwnl9cogKQTevSK2LYFL2Qysyp6ypmugUd2YJAit7Q9mE4iZLWFAZAynffDuPZbLc1HGNJ90BuaeUTpRLQLN4QqTQPUx3/AAT3mXMUHKkJBKZtgGFpgeggmT2VkylBcyYo5SgpSlOVIyABIJLlQpqYvcVtTRIfx+MDSEFZdQPKsYSp6HKODCLterCkTQbZUjiRU9IelcrVSX5kP+kem4ENQwJOwSdW8ffeI7BM2cDYpbk3yhZc3p/S3uihn4Al8uXq5f8AWIwmalLDKebJfzjQGpIQofl9IwX2hYCclSJqEFUsIykirHMaMKgMbwcibOFQ48Hh3/iM1NCfrxhi6ZNWZXE4rBTVKnLlzkrmErUO8GUKUXIH4Ro5gUzsHnAEmcQxr34Gho3cxqZndkuZQPFiR7oSbhpJS4ktVNcxJ9oCz6xzeHhxhSzbvqfudOzpvGh/0vUq9hYpE7EYjEqzy0qoGQpaRmYkLUkU9kaaxpsOlSklUqchaBUlK7cm0igx+Jl4WcO7llyl3dVKlgNHpCYWXLmEKlTChaXNANWqoe1pdzG9kmko6Ld4HG63l/nxAUScw3dLs5NS1KnSKqZtKZLJVmdGZiSxL6nmNHiDGTcYQU5jMTbMkBbeLOIo8RNmgBBoOaR6lo6Qg0ZbNgjFrNcoPNkV59InllR/Iiv/AMYJ9YzuwphX+CFhKz+zJ9kr0Qo6BWh0LaGHjaqkEoWhlpJCgXBBFwRE1LuIvpaMxKRK3gHIActxYPSAcTsKXmCpksoTR2lqT4qJB9PKAJG1loUpSDlzAWPCLLB9pJynlzFjKQ1QB4QNVrQpjkfZ8FnOiZLMslwUlaqdbEwzF/Z6ACUqc6PFps7bygXDZgRm4TA1CofvW3hVxVxGmwfaDDTHBVlIuFBiOps3OOcpy5m1lZyrF9jFoBJfSiEqUT0aKnGbJCK5VjRlMD5X9I70e6JYLQS7UUODt5Qw4CUoOwL60MSxJA4I4Xs/Za1scrAKzOR+61vOPR1/aGz0CYQ3/lpp8QpEejGZts640VUOn5ZXS8CBw9TEoCEipfw+UDSpiUimnOni8RCbfQco6HMOGKH5Q0NXijqKdW90CC9vX6YQ9KFG4oza660+MVFZL98yCg8iPKJEYrOAwvxJ90ekbOQKkOeYi0kYdIsPG0WhagsrDqNm5n6NYNlYUJuX9Id3oa0A4rFM9fWCyCpq0jWKjE4nOWSIhUpcxwLe+LHCYMj6r/aAiPB7PFyKnrFunDpGkJKltDhM5fXGIQbFrAsW4xVYnGhNiCel+QcxZYpVGIPHp5xVLkjMo08rRpAySVinBdKeF/O1IRav4U8OsQFWUAaaUNeEKtQuT/bg8Ak8xKS4KSW5lofh8FJX7Uvxcx5C6BtRz98Ol0MRHp+zZQSSJILaZvc8VeJwsvISJZSQpF60zpDgiNEKh9ffxit2ur8MsNUVb/1ExmT0Z27P/NDqvUwPbeaPvGVIYDKx4uklmiqw80jfFCmzUPnFr2+C0z5ayjcJfMz1Ay5SOQr4mKoywtgkhJUcrcH1HJo9C3I8pdDbwDBKmGiaUHSHIxffFjvcrnyjIbRw2RWSoaoe44ikDysZMQQQTTVy48biNmaNivZod0Kb5/CLPtBjBNCcSTLlzSBLWkOCcoH4maxzeDaveM4jtdNmoMtaULWQyZi0/iJ594livop4r5/3lVFTaGnLxpAa3kuPngZlFYJYhOVQJfw95gfZu0EAfiKVmJu5MA4zBqQQCQXFwYH7owgaRe0pSWUmYX5FT+TQqNroJfvVAswPzB0jMoluYaUxUiNxK21LdjMIJ1C0lJfgWpEeG7SY3vTLwy3CHV+U0oOQOkYt4MwM+bKImJSetWI58RHLZJbhNtL7XbQKh3kpKlEGUT3agyFMVKoWcNe0egPZW3BONU5VMRxBsacLR6PNbt2jtjPSHT8s3gkAhgjN4P4wokly7A+B/tEmGSRuuTV2ct1MTFXQHgGjtZgjkSE/K7eZgyQQxA08oiSvQ3/WIpmKyijPdn+qQEWK5gTU/CBp+0EpF/K8VOKxpHFVWoCfQW8YDWVKLE1PGrfKIiwxG1BZyeND74jl4hKzUFuh8or5Uk5spzWP8vrFrgpABNQ9PAxEG4ZA+VIs5SWvAuHQR1v0pE2d/ZbV/rWAifvATSGGa5NC3pDZp+uECYvGlJy18L6+UJD5kt05nGuoB4wNISCLgjqOsDzphIBbUVs3jCDVJckFzU05PreEiaaoWFqa0iBaWt5aGHYmhDNVqW6wycijv5fpAI+WslNrEU9KQ2ZMI8IbhPZUP7xCp2+URFjhp9uMJtX9keOaX/1ERWyZqgQwp1pzg7aOICpXQywRxaYj6eMz3M7dn/mh1XqE43DJmpKFoSoG4PoRSOZ7S2MrDzsh9khWVWhDG/MR0xRSok51vZsyrfCAtsYJMyWoKBU28AovUc9HtG4yo4NWcf2tNUSgqU5ygE9KeMAJgnbc9Cl/h+wAAPeX8SYFlLB6x6K0OZJIOVQMWwxiD+Zuo+UVKgIjKhxiEtcTlWGBB6kj3wKcHyH+ofOBB1hDDYBf3PkfSGKwJ4K8oN2WmXkdQSVZjci1P1iXGypfdqIAcCjHUluMFlRVHBl2ALcxBiMLMYJdTcC7RXhauJ8zHgo8/MxMU6L3CoyTJTBnmMfFJHxj0Q9nAnvEFdkrduJyEJvzIMejyYi+Y9GNTUG+X5Z10Kf+EX5nTwhO8Sng54jWKubtJqPbi3nrpAszag42YO1anpG6ONlxMnZt0e/w8IrRiAfZL3FXo1KvcRXKx4cOTVQoOZavAQ7aEvKxLgEkUsWHSGgssZSwN4kuX8nfyrCyN40oku5anR4rcPOSxAcAOerV98TydoJDP7j5esGUbLiVLAYaG1DpFnIlNYdTWvN/KkVeAxoU7Kr4irXiwqgVIVU6Fzb68oGQWuZXKL6/XGJkjKOZ9YCwxbeL5jx518rw6bia+HkfgGiElxE8B+OtLeMCK3vO5dzSnxjylhVze8JLSSoAKCc1SVFhrVTdIQGqFKtXn687CAZeKdRGfnr9aiDmJdmU9A3C3leBcLgcjke0QWsQH4PAI2aslQIcBySDSz68CaxOEON768RERCkkM9bDU8z1rHlTCCQSx1PRj0gE9LmBPA3rqPoREtbHiP0rEaZgcs1FVOgBrHs1QbvWIh6XoKdIixU1WQ8CpHBvbTT3w0l/gfCPTlKUkpDD2dHsQoAgcwLRS1TOuA1HFi3uTXqW5m1dmaECi9S45190AoXPIcql6U7tdPHvIkkpnmy5XJpa/wD9xm+41sl9a8/YxvazsilJM6WndJJIDUJ+EZCZs3KY7EDP3nXKIsxlr5ad5WM1tfsyo7yCgm+VKSOoGZRjrDF4Mw8BcJLz9jBDDm0TYVSpblNCQzsHHMPFhMwpSpi7i4YUPBoTuxzB6B/fHbN3GNivrXn7FVNSpXtbx/eIAJ5Uv4wOZXKL7uAXuW5CEGHHF/C0WbuLZL615+xQd0eEIJJ4RefdQPoQn3Yc/SsGbuLZL615+xTyQHAU4EW2CwCZswIEvKgmkzvAWABrWhJ4QyZITqD6QyWMhdBU/DdbyIgcnyHZL6l5+xrZfZ2QjKkFZISV1KQSoENcM1TQR6KjZ2297KaOMrG1WtWlo9HncWt448o/Kk7pF3jJzLIOY9B6c4hlZiFbinYUYvezxoZG2ZKU5ZijmDg+1xPAMLQqe0GHNA5b+f3NHZHIzsjCTFEfgrbMKkGlRW1I0e2cKtaE5UlRC3IHQ/OHo7QyEpLIUX4g/OkWOL2imSnOpGYOBugE1BOpHCIjPYPZk5y8tgxq6eTawxOwJ9sg/wBQ+BtFuO1KQmko6s4EEHb5ZW5Zjca6WgIC2RsuZKLqZi35tH5CL7uRq2t3tp1d/fAkjaveli43Qpw3iNILmKDPlobvR2c1HGMS3mkD4meE5QQwNiPZDHU9QYhlYtJ6eQL/AKQ3F4cBxRzavkWYwJh5BKnYAaMQSebGvLwiQB8uUAHzg2NGp49YFmYsuzi7kMG9esNx0sEAAgF7jk9yTQfpFchSwd4FjSj+Za2ohAtpSybPQ10I5PwPxguVOYOG9Xow5jyigmTsoYqU2b2RqsacqE+sJ3ygAFFz4swNvKASynzFFTigFa3o+kJOKGy1Ivc3pw5vFaJuZy9fQcqHpDFTFIBBGmjM9mBiILIagLC/R6jWmsMWp7OW0s+p/vAc4LBdwXAJLi/A+USZyKGrs1X8miEKlOHDink7tDCXIcubigv86QyUqgJe7Owaz8a+URT0gkEqPMsH0/R6C8RWW+HxOjMQHHH+8FCcLlOkUCZtnfnxPCLbB4lNHO6U1t9G8DRJhS0Je9rWHL6rEgIdjRjrY9Dw/WAJa1JLnV61Y2LgkOIRMxIu5BYXLhqgjx4vENjdrbHlzQ6ksTTMGzdecZHaewZkp1XA1HC+8BaNvLmK9tJobZhUCjUhc7UJdhytcv5xuM2jLVnM0nM1G0h+TgDS/Pr0jbbQ2FJWSoqCFNcAAMz1FjaKjG9nCEkomoUGGinq3B46LFiYcWZ0SzYM/Lo8MMo6DnwiyxGBKAFFSS/skFweJBGo4GBDc1tw141jonZkAKTzP0dYRaOXreDQHcioF7Ajm1zaIpiTpUafQvEQLJlkqSSPzJ83Eeg/DPRibinJ9Y9HDE3iWypZzrcUzM5MTIl6s3nWJdoiYmYoMT0KctRapcmElT1fmQtgzB0cavvQZlzJzinVjlSiRQF/GNJtasvKE1SUGni4J6GKGUVKCsqSFBJIzqDGoF0gkX4QVtPtChUvuiFJUCHZlJccCWJHgIU8zpFtI8yEylGjO308Tq/Mkfujxv8AKKRe1OBUfBIv4wVisSZcsnLXMHKlMxNEuUgnL0BPKKXytJ8TSknuNN2bUUgkpBskPRwNKXAeCsVjSoOQBRmDAdXMVux8QFSUEhaXANcv+ZUAEE2peJ+9S5e4BoaipADc2jFp6o3uI87uWLWDln4tx/WCJuLWhkg0azlqOLABn0hmIGRwCaDlx9A0AzMQou6QaACtXBJ6PQeEJljsXKmKSVBJulrEtWoPUcBeKvHbRCZol1VQgslgDR1EEOSAwanzlxE1QDOoEsGzU6NwgPA7NQQor3ic1BugUp8oa5kTomJmTQKFKWG7xqXI5jXlB82Q4BJDf3trcfOAsMopr/Eeb1e5rB8/EuhIJ3uLdXAA0OtdIBIcSlJyuSWDbrO5FiAePvhFzFUCQxcHeeiRcm7DWGD8zg5jl4AG9C1eETZGFVcww8SKAcYCIMVlLnlozOOFiNPMQksKytTkXLi5ccfGEmTQHJua2vx5A2jwVuljcUDUvQHyMRAuRT0JN9KhvTy4w9bqYEvo/JuXSFSkEsOj1HOkO7t9auGP1aEhZTCj1OunVwakdINwyQlgDrq/ImrW+tIr0q3mB1a1zq4GmkEyCQVVoEkca0Ljg8TItivNut7LBquXFnazgu8RIQ45moBcbrV1u590LhwWzCoU7EmjkVpDp03KxsGDHkQS5GpdLDhGRJllnUFXBpxIapGjMacYcUH2WPAKpRq/G8Ry1hiS4Hm72oekPMwsgp9ou5sKVpw+uMRCTJLux5aODqHHOkBzsOcpWCxKlDV3LbzG/wBWiyXPUoFxmFnDCvQnneI1nhUFyx5ByTWh0pwhTBozGL2aS+VWRSm3dFC4NbK4xQYnOlRStNnDkCnCov1jd4iWaE61Ac5bjx4QJOw4WahJAoQwYHU1FdKiOsZ0YaMUqWSAS1Ph77x5SSC2oNK0+qxq1bLkKKtxi6bOzankWhTsKUohIBBYmii9LO/MPeN50FGWQkuCHqR5PUNCxoVbBQkkhSiACa3BDU51ePRyxJJlR//Z");      /* Faz a imagem cobrir todo o elemento */
+      background-position: center; 
+      background-repeat:no-repeat;  
+      background-size: 300px 300px;     /* Centraliza a imagem */
+      color: black;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      min-height: 100vh;
+    }
+
+    header, footer {
+      width: 100%;
+      max-width: 1100px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 4rem;
+      margin-bottom: 30px;
+      color: black;
+    }
+
+    main {
+      width: 100%;
+      max-width: 1100px;
+    }
+
+    #video {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      margin-bottom: 30px;
+    }
+
+    iframe {
+      width: 100%;
+      height: 200px;
+      border: none;
+      border-radius: 8px;
+      background: #000;
+    }
+
+    button#btn {
+      background-color: red;
+      border: none;
+      color: white;
+      padding: 12px 25px;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    button#fezes{
+         background-color: #1e88e5;
+      border: none;
+      color: white;
+      padding: 12px 25px;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button#btn:disabled {
+      background-color: #666;
+      cursor: not-allowed;
+    }
+
+    button#btn:hover:not(:disabled) {
+      background-color: #1565c0;
+    }
+
+    footer {
+      font-size: 14px;
+      color: #aaa;
+      margin-top: auto;
+      padding-top: 40px;
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      iframe {
+        height: 180px;
+      }
+
+      button#btn {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🔥 Química Geral: Fundamentos, Reações e Estrutura Atômica | Guia Completo</h1>
+  </header>
+
+  <main>
+    <section id="video" aria-label="Galeria de vídeos do Rica Games">
+      <!-- Os vídeos serão carregados via JavaScript -->
+    </section>
+
+    <button id="btn" aria-label="Carregar mais vídeos">Carregar mais vídeos</button>
+    <br>
+    <br>
+    <br>
+   <button id="fezes" style="background-color: red; border: none; padding: 10px 20px; border-radius: 5px;">
+    <a id="credito" href="https://share.google/KWgHRCKwLAg6RZDzh" style="color: white; font-size: 18px; text-decoration: none;" >ESTÁ PRECISANDO DE CRÉDITO? SAIBA COMO +</a>
+  </button>
+  <br>
+  <br>
+  <br>
+   <button id="fezes" style="background-color: red; border: none; padding: 10px 20px; border-radius: 5px;">
+    <a id="larissa" href="https://share.google/GmZYgONVHIvptSwvv" style="color: white; font-size: 18px; text-decoration: none;">Dra Larissa Saib - Medicina Capilar & Estética</a>
+  </button>
+  <br>
+  <br>
+  <br>
+  <br>
+  <button id="fezes" style="background-color: red; border: none; padding: 10px 20px; border-radius: 5px;">
+    <a id="oportunidade" href="https://share.google/GmZYgONVHIvptSwvv" style="color: white; font-size: 18px; text-decoration: none;">FAZER RENDA EXTRA ? SAIBA COMO</a>
+  </button>
+  <br>
+  <br>
+  <br>
+  <br>
+  <button id="fezes" style="background-color: red; border: none; padding: 10px 20px; border-radius: 5px;">
+    <a id="oportunidade2" href="https://share.google/GmZYgONVHIvptSwvv" style="color: white; font-size: 18px; text-decoration: none;">🚨 OFERTA IMPERDÍVEL! 🚨
+    Não perca essa chance única de aproveitar o melhor com descontos incríveis!
+    🎯 É agora ou nunca! Garanta já o seu antes que acabe!</a>
+      </button>
+  <br>
+  <br>
+  <br>
+  <br>
+  <button id="fezes" style="background-color: yellow; border: none; padding: 10px 20px; border-radius: 5px;">
+    <a id="oportunidade3" href="https://espiritosantoes-com-brprincipal.pages.dev/vps01" style="color: black; font-size: 18px; text-decoration: none;">
+      🎯 Servidores VPS potentes e com suporte brasileiro. Ideal para quem busca estabilidade e preço justo com suporte técnico ágil. 🎯
+      🎯 É agora ou nunca!🎯</a>
+      </button>
+  <br>
+  <br>
+  <br>
+  <br>
+
+   
+  </main>
+
+  <footer>
+    &copy;|🔥Química Geral: Fundamentos, Reações e Estrutura Atômica | Guia Completo
+    <a href="https://espiritosantoes-com-brprincipal.pages.dev/sitemap">MAPA</a>
+  </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    let indexe = 0;
+const limiteporvez = 1;
+const resultado = document.getElementById('video');
+const botao = document.getElementById('btn');
+let contador = 0;
+const videos = [
+
+"https://www.youtube.com/embed/-OMxw1p9Ntg",
+"https://www.youtube.com/embed/-TcxkzgpZt0",
+"https://www.youtube.com/embed/-W1_GWgZPJk",
+"https://www.youtube.com/embed/-e3GNeonXyU",
+"https://www.youtube.com/embed/1SGMuHCedHc",
+"https://www.youtube.com/embed/1kiHRnue9AM",
+"https://www.youtube.com/embed/2FU51moOf6c",
+"https://www.youtube.com/embed/2OS_tVes5gI",
+"https://www.youtube.com/embed/2dR_P7ByXSM",
+"https://www.youtube.com/embed/3520DG7YDOM",
+"https://www.youtube.com/embed/3YYKtE-3kkU",
+"https://www.youtube.com/embed/3cvs2tC80ZU",
+"https://www.youtube.com/embed/3lrrP0zNCBY",
+"https://www.youtube.com/embed/4ZNifldG6Uk",
+"https://www.youtube.com/embed/5-MNmRxmrkk",
+"https://www.youtube.com/embed/5-fa4IKp5bU",
+"https://www.youtube.com/embed/50pS4MOTk6Q",
+"https://www.youtube.com/embed/5BGwKaOuR28",
+"https://www.youtube.com/embed/5Ehh_XJs4Gc",
+"https://www.youtube.com/embed/5NVqySiRoCM",
+"https://www.youtube.com/embed/62UkqSirt2c",
+"https://www.youtube.com/embed/6XWQdHgpiwc",
+"https://www.youtube.com/embed/6aJ6wGR9usw",
+"https://www.youtube.com/embed/74dGVu91clQ",
+"https://www.youtube.com/embed/7IcoEt9uhTk",
+"https://www.youtube.com/embed/7kluWpnlVPU",
+"https://www.youtube.com/embed/7nX1z-jZ29Y",
+"https://www.youtube.com/embed/8oG_w2Dp92E",
+"https://www.youtube.com/embed/9C-0Ad69qQg",
+"https://www.youtube.com/embed/9JxAUeMSNUY",
+"https://www.youtube.com/embed/9lMpK_eWjSE",
+"https://www.youtube.com/embed/9m689FuYfco",
+"https://www.youtube.com/embed/ACCfdhQdUtk",
+"https://www.youtube.com/embed/AMVmyhq3hpE",
+"https://www.youtube.com/embed/ANnkstfG6nE",
+"https://www.youtube.com/embed/AQexJnpEBqA",
+"https://www.youtube.com/embed/AXfMFmG0yZ0",
+"https://www.youtube.com/embed/AqIabLgX_U4",
+"https://www.youtube.com/embed/B9lVhwwDOIk",
+"https://www.youtube.com/embed/C1SZTUrilss",
+"https://www.youtube.com/embed/CWe9vYXUK2c",
+"https://www.youtube.com/embed/ChNg0SkNiFs",
+"https://www.youtube.com/embed/Cp7gAyjTxyg",
+"https://www.youtube.com/embed/D5JZXsSNFl0",
+"https://www.youtube.com/embed/D7OTp1e9j-A",
+"https://www.youtube.com/embed/DVM5ilafuew",
+"https://www.youtube.com/embed/E17LR6pwUJ4",
+"https://www.youtube.com/embed/E27-3MwY7KU",
+"https://www.youtube.com/embed/ESllxUjEQnQ",
+"https://www.youtube.com/embed/EXedEObHWFk",
+"https://www.youtube.com/embed/E_THauFnZCE",
+"https://www.youtube.com/embed/EvYyQKFQb7w",
+"https://www.youtube.com/embed/F9wDPALlGgQ",
+"https://www.youtube.com/embed/FDnxddw0P1g",
+"https://www.youtube.com/embed/FTkqIAVzuMs",
+"https://www.youtube.com/embed/FY52cvdvDD0",
+"https://www.youtube.com/embed/Gm83l2ugL1w",
+"https://www.youtube.com/embed/GtxdKNuluZM",
+"https://www.youtube.com/embed/H1Kx5uC_yzU",
+"https://www.youtube.com/embed/Hc-LOpjYaTk",
+"https://www.youtube.com/embed/I-9VdAtBG-s",
+"https://www.youtube.com/embed/I9mdY92gsas",
+"https://www.youtube.com/embed/IB9NJoGgp5I",
+"https://www.youtube.com/embed/IpjuyE2XEeM",
+"https://www.youtube.com/embed/J-Af5imKAr4",
+"https://www.youtube.com/embed/JFtmZDGcgEg",
+"https://www.youtube.com/embed/Jgf70wE0ijA",
+"https://www.youtube.com/embed/K4bI13A0GEI",
+"https://www.youtube.com/embed/K_uxeZ9GNIo",
+"https://www.youtube.com/embed/KuN9H4QHzk0",
+"https://www.youtube.com/embed/L4bt7N7wvmE",
+"https://www.youtube.com/embed/LDMCzCzTAJg",
+"https://www.youtube.com/embed/Le8sJY8r0ew",
+"https://www.youtube.com/embed/MOMRmYFKogc",
+"https://www.youtube.com/embed/MSMIJZ5VkDo",
+"https://www.youtube.com/embed/MYFrp2jHajo",
+"https://www.youtube.com/embed/MZIcKvHVmrQ",
+"https://www.youtube.com/embed/Mqly8tV45CI",
+"https://www.youtube.com/embed/NKzqzLjDmwA",
+"https://www.youtube.com/embed/OB4x9svLGmc",
+"https://www.youtube.com/embed/OmzvTGMOiTI",
+"https://www.youtube.com/embed/OsDwP4jYlYA",
+"https://www.youtube.com/embed/QJX65kKmZY0",
+"https://www.youtube.com/embed/QO501vfJq38",
+"https://www.youtube.com/embed/QSGWNJgjRT0",
+"https://www.youtube.com/embed/QY75PKWlPQQ",
+"https://www.youtube.com/embed/Qt7A96dSyoI",
+"https://www.youtube.com/embed/R-DTx6Q3pcI",
+"https://www.youtube.com/embed/R689jpD65d0",
+"https://www.youtube.com/embed/RKavJMQk0J4",
+"https://www.youtube.com/embed/RZm4GA8CFE4",
+"https://www.youtube.com/embed/RhhkX0wgisY",
+"https://www.youtube.com/embed/S5O-_kHn3W0",
+"https://www.youtube.com/embed/SbblIkgoaEE",
+"https://www.youtube.com/embed/T54ygvIej68",
+"https://www.youtube.com/embed/TMQGLstE7BQ",
+"https://www.youtube.com/embed/UN5nuP91jVk",
+"https://www.youtube.com/embed/UT6qgwjRgH8",
+"https://www.youtube.com/embed/UjXlHX3EEi0",
+"https://www.youtube.com/embed/V3ByH6JAqKc",
+"https://www.youtube.com/embed/VC3nwt-zmRo",
+"https://www.youtube.com/embed/VIr7b9Kdx6c",
+"https://www.youtube.com/embed/VVIUBoydb5Q",
+"https://www.youtube.com/embed/VmuEVMAgSxc",
+"https://www.youtube.com/embed/VubeWfHj0pc",
+"https://www.youtube.com/embed/WCewAIJXgSY",
+"https://www.youtube.com/embed/WrlbRPwq4ns",
+"https://www.youtube.com/embed/XDBwYrWFZUQ",
+"https://www.youtube.com/embed/XETuenX_6kk",
+"https://www.youtube.com/embed/YSgMAFoPykI",
+"https://www.youtube.com/embed/YUjobY2mSzg",
+"https://www.youtube.com/embed/Yd39X2L--ws",
+"https://www.youtube.com/embed/Z5GfBVghBzY",
+"https://www.youtube.com/embed/Z6eEwCq38o4",
+"https://www.youtube.com/embed/ZIBNg4FMMDI",
+"https://www.youtube.com/embed/_LrTKx66Vhs",
+"https://www.youtube.com/embed/_p-WrIdcAQc",
+"https://www.youtube.com/embed/_u8KnEOGpoU",
+"https://www.youtube.com/embed/_xH3b5pmqqk",
+"https://www.youtube.com/embed/aVkzSoeFOHU",
+"https://www.youtube.com/embed/awfjf_6ujYw",
+"https://www.youtube.com/embed/baaQT_vddAA",
+"https://www.youtube.com/embed/bi0M1kRsPug",
+"https://www.youtube.com/embed/bndXe3Pr4FY",
+"https://www.youtube.com/embed/bqIFA-x6FpE",
+"https://www.youtube.com/embed/bvkwQCecC9w",
+"https://www.youtube.com/embed/cH7AOtvU7do",
+"https://www.youtube.com/embed/cQUfUtHpuos",
+"https://www.youtube.com/embed/cZFA7rfplHE",
+"https://www.youtube.com/embed/d81xcIb57Yo",
+"https://www.youtube.com/embed/dHW8f0o0meU",
+"https://www.youtube.com/embed/daLa8Nim8fE",
+"https://www.youtube.com/embed/eAEPLlXUDek",
+"https://www.youtube.com/embed/eqFGa9hcdMc",
+"https://www.youtube.com/embed/fHFDMh9-998",
+"https://www.youtube.com/embed/fVbgf7sLr8c",
+"https://www.youtube.com/embed/fY8E1dhNGNc",
+"https://www.youtube.com/embed/faUV1w7_-7w",
+"https://www.youtube.com/embed/fxOgF3PoNQs",
+"https://www.youtube.com/embed/gYuWtceBeJk",
+"https://www.youtube.com/embed/gswVCoOMSjc",
+"https://www.youtube.com/embed/h-OFvwouYqk",
+"https://www.youtube.com/embed/hT_JSNJYLuo",
+"https://www.youtube.com/embed/hZWoT8ESBcg",
+"https://www.youtube.com/embed/hbwKwNhIFM4",
+"https://www.youtube.com/embed/iHOtL3ACGlQ",
+"https://www.youtube.com/embed/iJ9LPhpXEaY",
+"https://www.youtube.com/embed/iftv4mlFn0Q",
+"https://www.youtube.com/embed/ioK7vPCsODI",
+"https://www.youtube.com/embed/isFESlJdDI4",
+"https://www.youtube.com/embed/j7uWTPm54Jk",
+"https://www.youtube.com/embed/jPL78QD6hBk",
+"https://www.youtube.com/embed/jScFCzblS7w",
+"https://www.youtube.com/embed/k2j4Bj8esVg",
+"https://www.youtube.com/embed/k9QoEMtEINI",
+"https://www.youtube.com/embed/kTvUuUG1A3Y",
+"https://www.youtube.com/embed/l7_zUTqTk2w",
+"https://www.youtube.com/embed/l8ONbhsjybY",
+"https://www.youtube.com/embed/lV_9owoT_cU",
+"https://www.youtube.com/embed/lpEOk09rlIY",
+"https://www.youtube.com/embed/mGFhpCSAAcQ",
+"https://www.youtube.com/embed/mUyuIcIIJwQ",
+"https://www.youtube.com/embed/mWNcxlgCHVI",
+"https://www.youtube.com/embed/mmo3kHzwqWc",
+"https://www.youtube.com/embed/nEA3h62BS34",
+"https://www.youtube.com/embed/nPAAD60Sup8",
+"https://www.youtube.com/embed/nRmqxYSdOAs",
+"https://www.youtube.com/embed/niF9t_Ut7ts",
+"https://www.youtube.com/embed/oRcH34fcKeU",
+"https://www.youtube.com/embed/oSlzjA3wUCM",
+"https://www.youtube.com/embed/of52IclmxAM",
+"https://www.youtube.com/embed/oiPF_bbgZoQ",
+"https://www.youtube.com/embed/q8eATBZn1mo",
+"https://www.youtube.com/embed/qEMStx7_f3U",
+"https://www.youtube.com/embed/qeZjvf3DdkU",
+"https://www.youtube.com/embed/qxfFPGjEfvY",
+"https://www.youtube.com/embed/qyjIO-sn4l4",
+"https://www.youtube.com/embed/rKfkMdWJwoU",
+"https://www.youtube.com/embed/rVpK4Y7VETY",
+"https://www.youtube.com/embed/rqr6QKEJX94",
+"https://www.youtube.com/embed/rsoPeC9R5eg",
+"https://www.youtube.com/embed/sirfLa0aMZ0",
+"https://www.youtube.com/embed/skvVYLrhKAo",
+"https://www.youtube.com/embed/szchZFg2vDk",
+"https://www.youtube.com/embed/t-w9znZhNbk",
+"https://www.youtube.com/embed/tD1td7VQsw4",
+"https://www.youtube.com/embed/tIx2BlmExqw",
+"https://www.youtube.com/embed/trAXPyHYFQ0",
+"https://www.youtube.com/embed/uAufEQMBxEQ",
+"https://www.youtube.com/embed/ux3gTZWA634",
+"https://www.youtube.com/embed/vjwfr1eArGE",
+"https://www.youtube.com/embed/w7AGtQKXuyY",
+"https://www.youtube.com/embed/wYCxgbxFBlI",
+"https://www.youtube.com/embed/xibiSjeRX9Y",
+"https://www.youtube.com/embed/yF8o5vTOGc4",
+"https://www.youtube.com/embed/yJN6a_mPe6A",
+"https://www.youtube.com/embed/yU0sRZ3mx8Y",
+"https://www.youtube.com/embed/yUfy3KkFXVo",
+"https://www.youtube.com/embed/yy6Fg67vrTQ",
+"https://www.youtube.com/embed/z7VcXHTh7KE",
+"https://www.youtube.com/embed/zJGi_8W3FY4",
+"https://www.youtube.com/embed/zYKMAA_QPVs",
+"https://www.youtube.com/embed/ztNjcNBIdNw",
+"https://www.youtube.com/embed/zwXXdcLVoUI"
+
+];
+
+function criaIframe(src, width = 300, height = 300) {
+  const iframe = document.createElement('iframe');
+  iframe.src = src;
+  iframe.width = width;
+  iframe.height = height;
+  iframe.setAttribute('frameborder', '0');
+  iframe.setAttribute('allowfullscreen', '');
+  return iframe;
+}
+
+botao.onclick = function () {
+  let final = indexe + limiteporvez;
+
+  for (; indexe < final && indexe < videos.length; indexe++) {
+    contador++;
+
+    // cria e adiciona o vídeo
+    let iframe = criaIframe(videos[indexe]);
+    resultado.appendChild(iframe);
+
+    if (contador === 4) {
+      // Anúncio para contador 1
+      const div = document.createElement('div');
+      div.innerHTML = `
+        <iframe src="https://sistema01.pages.dev/" width="350" height="250" frameborder="0" allowfullscreen></iframe>
+          <a href="https://sistema01.pages.dev/" 
+          style="display: inline-block; background-color: blue; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-weight: bold; font-family: sans-serif;">
+          ABRIR TELA CHEIA
+        </a> 
+        <br>
+        <br>
+        <iframe src="https://espiritosantoes-com-brprincipal.pages.dev/vps01" width="350" height="250" frameborder="0" allowfullscreen></iframe>
+          <a href="https://espiritosantoes-com-brprincipal.pages.dev/vps01" 
+          style="display: inline-block; background-color: blue; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-weight: bold; font-family: sans-serif;">
+          ABRIR TELA CHEIA
+        </a>
+        <br>
+        <br>
+        <iframe src="https://imagemprog.pages.dev/" width="350" height="250" frameborder="0" allowfullscreen></iframe>
+          <a href="https://imagemprog.pages.dev/" 
+          style="display: inline-block; background-color: blue; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-weight: bold; font-family: sans-serif;">
+          ABRIR TELA CHEIA
+        </a>
+
+      `;
+      resultado.appendChild(div);
+      
+    } 
+
+    if (contador === 5) {
+      // Anúncio para contador 1
+      const div = document.createElement('div');
+      div.innerHTML = `
+        <iframe src="https://conteudo01.pages.dev/" width="350" height="250" frameborder="0" allowfullscreen></iframe>
+          <a href="https://conteudo01.pages.dev/" 
+          style="display: inline-block; background-color: blue; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-weight: bold; font-family: sans-serif;">
+          ABRIR TELA CHEIA
+        </a> 
+        <br>
+        <br>
+         <iframe src="https://espiritosantoes-com-brprincipal.pages.dev/12" width="350" height="250" frameborder="0" allowfullscreen></iframe>
+          <a href="https://espiritosantoes-com-brprincipal.pages.dev/12" 
+          style="display: inline-block; background-color: blue; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-weight: bold; font-family: sans-serif;">
+          ABRIR TELA CHEIA
+        </a> 
+        <br>
+        <br>
+      `;
+      resultado.appendChild(div);
+      contador=0;
+    } 
+
+    if (contador === 1) {
+      // Anúncio para contador 1
+      const div = document.createElement('div');
+      div.innerHTML = `
+       <iframe src="https://social-5rp.pages.dev/" width="350" height="250" frameborder="0" allowfullscreen></iframe>
+          <a href="https://social-5rp.pages.dev/" 
+          style="display: inline-block; background-color: blue; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-weight: bold; font-family: sans-serif;">
+          ABRIR TELA CHEIA
+        </a> 
+        <br>
+        <br>
+        <iframe src="https://uteis01.pages.dev/servicobancario" width="350" height="250" frameborder="0" allowfullscreen></iframe>
+        <a href="https://uteis01.pages.dev/servicobancario" 
+          style="display: inline-block; background-color: blue; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-weight: bold; font-family: sans-serif;">
+          ABRIR TELA CHEIA
+        </a> 
+        <br>
+        <br>
+        <br>
+                <iframe src="https://espiritosantoes-com-brprincipal.pages.dev/vps01" width="350" height="250" frameborder="0" allowfullscreen></iframe>
+          <a href="https://espiritosantoes-com-brprincipal.pages.dev/vps01" 
+          style="display: inline-block; background-color: blue; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-weight: bold; font-family: sans-serif;">
+          ABRIR TELA CHEIA
+        </a>
+        <br>
+        <br>
+        <iframe src="https://imagemprog.pages.dev/" width="350" height="250" frameborder="0" allowfullscreen></iframe>
+          <a href="https://imagemprog.pages.dev/" 
+          style="display: inline-block; background-color: blue; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-weight: bold; font-family: sans-serif;">
+          ABRIR TELA CHEIA
+        </a>
+      `;
+      resultado.appendChild(div);
+    
+    } 
+    
+    else if (contador === 2) {
+      // Anúncio para contador 2 (diferente do 1)
+      const div = document.createElement('div');
+      div.innerHTML = `
+        <iframe src="https://encurtadorko.pages.dev/" width="350" height="500" frameborder="0" allowfullscreen></iframe>
+        <a href="http://www.espiritosanto-es.com.br/cloudflare" 
+          style="display: inline-block; background-color: blue; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-weight: bold; font-family: sans-serif;">
+          ABRIR TELA CHEIA
+        </a>
+
+      `;
+      resultado.appendChild(div);
+       // reseta contador depois do 2
+    }
+  }
+
+  if (indexe >= videos.length) {
+    botao.disabled = true;
+    botao.textContent = 'Chegamos no limite já';
+  }
+};
+</script>
+<script>
+  let urlslarissa = [
+    "https://share.google/GmZYgONVHIvptSwvv",
+    "https://www.larissasaib.com.br/",
+    "https://ig.rdstation.com/dralarissasaib",
+    "https://www.doctoralia.com.br/larissa-goes-duarte-saib/dermatologista/sao-paulo"
+  ];
+  let indexLarissa = Math.floor(Math.random() * urlslarissa.length);
+  let larissa = document.getElementById('larissa');
+  larissa.href = urlslarissa[indexLarissa];
+</script>
+
+<script>
+  let urlscredito = [
+    "https://share.google/KWgHRCKwLAg6RZDzh",
+    "https://www.geocredibnk.com.br/",
+    "https://www.instagram.com/geocredibnkvitoria/",
+    "https://wa.me/27997269454",
+    "https://uteis01.pages.dev/servicobancario",
+    "https://novorepositorio.pages.dev/credito"
+
+  ];
+  let indexCredito = Math.floor(Math.random() * urlscredito.length);
+  let credito = document.getElementById('credito');
+  credito.href = urlscredito[indexCredito];
+</script>
+<script>
+  let oportunidadeurls = [
+    "https://airbnbn3.pages.dev/",
+    "https://br.pinterest.com/pin/546835579793085353/",
+    "https://br.pinterest.com/pin/546835579793036955/",
+    "https://refadav.com/?ref=Kt5Cug_KFFFDTyShljj9ScDkqv0FY5tK",
+  ];
+  let indexoportunidade = Math.floor(Math.random() * oportunidadeurls.length);
+  let oportunidade = document.getElementById('oportunidade');
+  oportunidade.href = oportunidadeurls[indexoportunidade];
+</script>
+<script>
+  //PRODUTOSPARAVENDER
+  let oportunidadeurls2 = [
+    "https://espiritosantoes-com-brprincipal.pages.dev/12",
+    "https://uteis01.pages.dev/servicobancario",
+    "https://espiritosantoes-com-brprincipal.pages.dev/vps01",
+    "https://hostinger.com.br/?REFERRALCODE=SSNVICTORXU8",
+    "https://central.dokehost.com.br/aff.php?aff=90",
+    "https://modeloanuncio01.pages.dev/",
+    "https://imagemprog.pages.dev/",
+    "https://espiritosantoes-com-brprincipal.pages.dev/",
+    "https://uteis01.pages.dev/servicobancario"
+
+
+  ];
+  let indexoportunidade2 = Math.floor(Math.random() * oportunidadeurls2.length);
+  let oportunidade2 = document.getElementById('oportunidade2');
+  oportunidade2.href = oportunidadeurls2[indexoportunidade2];
+</script>
+</body>
+</html>
