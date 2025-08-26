@@ -1,0 +1,48 @@
+from playwright.sync_api import sync_playwright
+import time
+
+url = "https://www.youtube.com/@CesarArcade/videos"
+
+try:
+    with sync_playwright() as p:
+        browser = p.chromium.launch(headless=False)
+        page = browser.new_page()
+        page.goto(url, timeout=60000000)
+        page.wait_for_load_state('networkidle', timeout=3000000)
+
+        links = set()
+
+        print('🔄 Iniciando rolagem para carregar vídeos...')
+        for _ in range (22):
+            page.mouse.wheel(0, 100000000000000)
+            time.sleep(22)
+            videos = page.locator('a#video-title-link')
+            contagem = videos.count()
+            print(f"🎥 Total de vídeos localizados: {contagem}")
+            if contagem > 880:
+                print('ok atingimos o limite')
+                break
+
+
+        # Localizar todos os vídeos após a rolagem
+     
+        for i in range(contagem):
+            href = videos.nth(i).get_attribute('href')
+            if href and "watch?v=" in href:
+                video_id = href.split('v=')[1].split('&')[0]
+                embed = f'"https://www.youtube.com/embed/{video_id}"'
+                links.add(embed)
+
+        # Gerar string final com quebras de linha
+        final = ',\n'.join(sorted(links))
+        print("✅ Links coletados com sucesso:\n", final)
+
+        # Escreve no arquivo (modo append)
+        with open(r'C:\Users\vitor\Desktop\imagenslinks.txt', 'a+', encoding='utf-8') as file:
+            file.write(final + '\n')
+            print('📝 Links salvos no arquivo com sucesso!')
+
+        browser.close()
+
+except Exception as e:
+    print(f'❌ Ocorreu um erro: {e}')
