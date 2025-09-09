@@ -1101,5 +1101,107 @@ botao.onclick = function () {
   let oportunidade2 = document.getElementById('oportunidade2');
   oportunidade2.href = oportunidadeurls2[indexoportunidade2];
 </script>
+
+
+
+<!-- BOTÃO FLUTUANTE COM FRASE DINÂMICA -->
+<button id="abrirPropaganda" style="display:none;position:fixed;bottom:20px;right:20px;z-index:9999;background-color:#28a745;color:white;border:none;border-radius:50px;padding:12px 24px;cursor:pointer;box-shadow:0 0 10px rgba(0,0,0,0.3);font-size:14px;">
+  <!-- Texto é definido via JS -->
+</button>
+
+<!-- POPUP IFRAME -->
+<div id="popup" style="display:none;position:fixed;bottom:70px;right:20px;width:90vw;max-width:350px;height:70vh;max-height:500px;z-index:9998;box-shadow:0 0 15px rgba(0,0,0,0.3);">
+  <button onclick="document.getElementById('popup').style.display='none'" style="position:absolute;top:-10px;right:-10px;background:red;color:white;border:none;border-radius:50%;width:25px;height:25px;font-weight:bold;cursor:pointer;">×</button>
+  <iframe id="iframe" src="" title="Site Flutuante" style="width:100%;height:100%;border:none;"></iframe>
+</div>
+<script>
+  function setCookie(name, value, hours) {
+    const date = new Date();
+    date.setTime(date.getTime() + (hours * 60 * 60 * 1000));
+    document.cookie = name + "=" + value + ";expires=" + date.toUTCString() + ";path=/";
+  }
+
+  function getCookie(name) {
+    const nameEQ = name + "=";
+    const ca = document.cookie.split(';');
+    for(let i = 0; i < ca.length; i++) {
+      let c = ca[i];
+      while(c.charAt(0) === ' ') c = c.substring(1);
+      if(c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length);
+    }
+    return null;
+  }
+
+  const frasesChamada = [
+    "Ver Oferta",
+    "Ganhe até R$500 Hoje",
+    "Aproveite Agora!",
+    "Clique e Descubra",
+    "Oferta Exclusiva",
+    "Dinheiro Fácil e Rápido!",
+    "Não Perca Essa Chance!",
+    "Saiba Como Lucrar Hoje",
+    "Seu Crédito Aprovado Aqui",
+    "Oferta Limitada – Acesse Já!",
+     "Realize o sonho do seu carro novo!",
+  "Consórcio sem juros — aproveite já!",
+  "Seu imóvel próprio está mais perto!",
+  "Consórcio: a forma inteligente de comprar.",
+  "Parcelas que cabem no seu bolso!",
+  "Consórcio que cabe no seu orçamento.",
+  "Planeje seu futuro com consórcio.",
+  "Quer sair do aluguel? Consórcio é a solução.",
+  "Adquira bens sem burocracia!",
+  "Consórcio: investir para conquistar.",
+  // Seguros
+  "Proteja o que é seu com o melhor seguro!",
+  "Seguro auto com preço que cabe no bolso.",
+  "Tranquilidade para você e sua família.",
+  "Seguro residencial — segurança total.",
+  "Cobre imprevistos com nosso seguro completo.",
+  "Faça seu seguro agora e fique tranquilo.",
+  "Seguro de vida que garante seu futuro.",
+  "Proteção para seu carro sem complicação.",
+  "Seu patrimônio protegido sempre.",
+  "Seguros personalizados para sua necessidade."
+  ];
+
+  const iframes = [
+    "https://geocredibnkvitoria.com/",
+    "https://espiritosantoes-com-brprincipal.pages.dev/vps01",
+    "https://novorepositorio.pages.dev/credito",
+    "https://imagemprog.pages.dev/",
+    "https://espiritosantoes-com-brprincipal.pages.dev/",
+    "https://imagemprog.pages.dev/",
+    "https://tempoaleatorio01.pages.dev/dinheiro",
+    "https://modeloanuncio01.pages.dev/",
+    "https://sistemabackupprincial.pages.dev/48",
+    "https://sistemabackupprincial.pages.dev/",
+    "https://novorepositorio.pages.dev/credito",
+    "https://uteis01.pages.dev/servicobancario",
+    "https://espiritosantoes-com-brprincipal.pages.dev/12"
+  ];
+
+  window.addEventListener("DOMContentLoaded", function () {
+    const btn = document.getElementById("abrirPropaganda");
+    const popup = document.getElementById("popup");
+    const iframe = document.getElementById("iframe");
+
+    if (!getCookie("popupVisitado")) {
+      // Seleciona frase aleatória
+      const frase = frasesChamada[Math.floor(Math.random() * frasesChamada.length)];
+      btn.textContent = frase;
+      btn.style.display = "block";
+    }
+
+    btn.addEventListener("click", function () {
+      const randomIndex = Math.floor(Math.random() * iframes.length);
+      iframe.src = iframes[randomIndex];
+      popup.style.display = "block";
+      btn.style.display = "none";
+      setCookie("popupVisitado", "sim", 24);
+    });
+  });
+</script>
 </body>
 </html>
