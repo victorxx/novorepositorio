@@ -1,153 +1,166 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
+    <title>Green Forest - Unreal Engine 5 Fan Remake - Sonic Adventure 2</title>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Criança de 10 anos cria app para ajudar colegas com matemática</title>
-    
-    <!-- Meta tags SEO -->
-    <meta name="description" content="Descubra como uma criança de 10 anos desenvolveu um aplicativo inovador para ajudar colegas com dificuldades em matemática. Iniciativa, tecnologia e educação unidas.">
-    <meta name="keywords" content="matemática, criança programadora, aplicativo educacional, dificuldade em matemática, educação infantil, tecnologia na escola">
-    <meta name="author" content="Seu Nome ou Escola">
-    
-    <!-- CSS Interno -->
+
     <style>
         body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
+            background-color: #000;
+            color: #fff;
             margin: 0;
             padding: 0;
-            background-color: #f9f9f9;
-            color: #333;
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
-        header {
-            background-color: #2c3e50;
-            color: #fff;
-            padding: 20px 0;
-            text-align: center;
+        h1 {
+            margin-top: 20px;
+            font-size: 2rem;
         }
 
-        header h1 {
-            font-size: 28px;
-            margin: 0;
-        }
-
-        nav {
-            background: #34495e;
-            padding: 10px;
-            text-align: center;
-        }
-
-        nav a {
-            color: #fff;
-            margin: 0 15px;
+        h2 a {
+            color: yellow;
             text-decoration: none;
-            font-weight: bold;
         }
 
-        main {
-            max-width: 900px;
-            margin: 30px auto;
-            padding: 20px;
-            background: #fff;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        h2 a:hover {
+            text-decoration: underline;
         }
 
-        main h2 {
-            color: #2c3e50;
-            font-size: 24px;
-            margin-bottom: 15px;
+        .propaganda2 {
+            width: 90%;
+            max-width: 600px;
+            height: 300px;
+            margin-top: 20px;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.15);
         }
 
-        main p {
-            margin-bottom: 20px;
+        .propaganda2 iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
         }
 
-        footer {
-            background-color: #2c3e50;
-            color: #fff;
-            text-align: center;
-            padding: 15px;
+        #video {
+            width: 90%;
+            max-width: 600px;
             margin-top: 40px;
         }
 
-        @media (max-width: 600px) {
-            header h1, main h2 {
-                font-size: 22px;
-            }
+        #video iframe {
+            width: 100%;
+            height: 320px;
+            border-radius: 12px;
+            border: none;
+        }
 
-            nav a {
-                display: block;
-                margin: 10px 0;
+        @media(max-width: 550px) {
+            #video iframe {
+                height: 230px;
             }
         }
+
+        .propaganda {
+            margin-top: 40px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            padding-bottom: 40px;
+        }
+
+        .propaganda button {
+            background-color: red;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            padding: 12px 18px;
+            font-size: 15px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+        .propaganda button:hover {
+            background-color: #cc0000;
+            transform: scale(1.05);
+        }
     </style>
+
+    <script>
+        function go(url) {
+            window.location.href = url;
+        }
+    </script>
 </head>
 <body>
 
-    <header>
-        <h1>Criança de 10 Anos Desenvolve App para Ajudar em Matemática</h1>
-    </header>
+    <h1>Green Forest - Unreal Engine 5 Fan Remake - Sonic Adventure 2</h1>
+    <h2><a href="https://www.facebook.com/groups/omelhordainternet">o melhor da internet</a></h2>
 
-    <nav>
-        <a href="#historia">História</a>
-        <a href="#app">Sobre o Aplicativo</a>
-        <a href="#impacto">Impacto Educacional</a>
-    </nav>
-
-    <main>
-        <section id="historia">
-            <h2>História Inspiradora</h2>
-            <iframe width="100%" height="315" src="https://www.youtube.com/embed/tRcr4vtV-4o?si=nmjRzYw8fCVK2Ruq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <p>Com apenas 10 anos, Ana Souza, estudante do 5º ano, surpreendeu professores e colegas ao criar um aplicativo para ajudar alunos com dificuldade em matemática. A ideia surgiu após notar que muitos colegas tinham dificuldades com tabuada e operações básicas.</p>
-        </section>
-
-        <section id="app">
-            <h2>Como Funciona o Aplicativo</h2>
-            <p>O aplicativo oferece jogos interativos, desafios diários e dicas práticas para resolver contas de adição, subtração, multiplicação e divisão. Desenvolvido com uma interface amigável, ele foi criado usando ferramentas como Scratch e App Inventor.</p>
-        </section>
-
-        <section id="impacto">
-            <h2>Impacto na Educação</h2>
-            <p>Desde o lançamento, o app já foi adotado por outras escolas e incentivou outras crianças a aprender programação. Pais e professores destacam a melhora no desempenho e no interesse pela matemática entre os alunos que utilizam o aplicativo.</p>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2025 Projeto Escolar | Desenvolvido por estudantes apaixonados por tecnologia e educação</p>
-    </footer>
-    
-
- <div style="position:fixed;bottom:20px;right:20px;width:90vw;max-width:350px;height:70vh;max-height:500px;z-index:9999;box-shadow:0 0 15px rgba(0,0,0,0.3);">
-      <button onclick="this.parentElement.style.display='none'" style="position:absolute;top:-10px;right:-10px;background:red;color:white;border:none;border-radius:50%;width:25px;height:25px;font-weight:bold;cursor:pointer;z-index:10000;">×</button>
-      <iframe id="iframe" src="" title="Site Flutuante" style="width:100%;height:100%;border:none;"></iframe>
+    <div class="propaganda2">
+        <iframe src="https://produto-63y.pages.dev/oportunidade" scrolling="no" frameborder="0"></iframe>
     </div>
-<script>
-    // Lista de iframes confiáveis ou controlados
-     const iframes = [
-      "https://geocredibnkvitoria.com/",
-      "https://espiritosantoes-com-brprincipal.pages.dev/vps01",
-      "https://novorepositorio.pages.dev/credito",
-      "https://imagemprog.pages.dev/",
-      "https://espiritosantoes-com-brprincipal.pages.dev/",
-      "https://imagemprog.pages.dev/",
-      "https://tempoaleatorio01.pages.dev/dinheiro",
-      "https://modeloanuncio01.pages.dev/",
-      "https://sistemabackupprincial.pages.dev/48",
-      "https://sistemabackupprincial.pages.dev/",
-      "https://imagemprog.pages.dev/",
-      "https://novorepositorio.pages.dev/credito",
-      "https://espiritosantoes-com-brprincipal.pages.dev/vps01",
-      "https://uteis01.pages.dev/servicobancario" ,
-      "https://espiritosantoes-com-brprincipal.pages.dev/12"
-    ];
 
-    // Escolher um iframe aleatório
-    const iframeIndex = Math.floor(Math.random() * iframes.length);
-    const iframeUrl = iframes[iframeIndex];
-    document.getElementById('iframe').src = iframeUrl;
-  </script>
+    <div class="propaganda">
+        <button onclick="go('https://fbs.partners?ibl=837120&ibp=33393839')">
+        💹 Comece no Mercado Forex Hoje! 💹
+        </button>
+        <button onclick="go('https://br.pinterest.com/pin/546835579793959220')">
+        🚘 Proteja seu carro hoje mesmo! 🚘
+        </button>
+    </div>
+     
+    <div class="propaganda">
+        <button onclick="go('https://www.airbnb.com.br/r/saibvictore?s=6&t=061n0g')">
+            QUERO COMEÇAR NO AIRBNB
+        </button>
+        <button onclick="go('https://produto-63y.pages.dev/vps')">
+            VPS RÁPIDO E SEGURO PARA PROJETOS
+        </button>
+        <button onclick="go('https://sites.google.com/view/recomendao-do-dia/oportunidade?authuser=1')">
+            CONFIRA ESSA OPORTUNIDADE
+        </button>
+        <button onclick="go('https://vendaschamada.blogspot.com/')">
+            OPA! TEM OFERTA AQUI
+        </button>
+        <button onclick="go('https://recomendadodia23.blogspot.com/')">
+            OPAAAAAAA VAMOS CONFERIR ESSAS OFERTAS?
+        </button>
+    </div>
+
+    <div id="video">
+        <iframe 
+            src="https://www.youtube.com/embed/dNpKa9DZmKM?si=0DN6jhAWF6itoAZB"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+        </iframe>
+        <div class="propaganda">
+            <button onclick="go('https://produto-63y.pages.dev/facebookgrupo')">
+                GRUPO DE FACEBOOK
+            </button>
+            <button onclick="go('https://produto-63y.pages.dev/pixelart')">
+                🎨 Curso de Pixel Art – Comece Hoje! 🎨
+            </button>
+            <button onclick="go('https://www.instagram.com/geocredibnkvitoria/')">
+                CRÉDITO PESSOAL
+            </button>
+            <button onclick="go('https://br.pinterest.com/internet6g/')">
+                CONFIRA ESSA OPORTUNIDADE
+            </button>
+            <button onclick="go('https://produto-63y.pages.dev/guarapari')">
+                APARTAMENTO EM GUARAPARI TEMPORADA PRAIA DO MORRO
+            </button>
+        </div>
+    </div>
 
 </body>
 </html>
